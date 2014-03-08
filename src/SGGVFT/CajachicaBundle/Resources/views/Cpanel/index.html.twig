@@ -1,0 +1,49 @@
+{% extends "CajachicaBundle::layout_cpanel.html.twig" %}
+
+{% block pageid %}cpanel cpanelmenu{% endblock %}
+{% block body %}
+	<div id="menu-titulo">
+		Menu Inicial
+	</div>
+	<div id="contenido_menu">
+		<a href="{{ url('cpanel_anticipos') }}" class="botones_menu_general" style="background-color: #2b84ea;">
+			<img src="{{ asset('bundles/cajachica/images/nueva_solicitud.png') }}"  width="40" height="40" />
+			<p>Solicitud de Aniticipos</p>
+		</a>
+
+		<a href="{{ url('cpanel_fondofijo') }}" class="botones_menu_general" style="background-color: #5dac15;">
+			<img src="{{ asset('bundles/cajachica/images/nueva_caja_chica.png') }}"  width="40" height="40" />
+			<p>Creación de Fondo Fijo</p>
+		</a>
+
+		<a href="{{ url('cpanel_emisionrelacion') }}" class="botones_menu_general" style="background-color: #da552c; width:250px;">
+			<img src="{{ asset('bundles/cajachica/images/relacion_gasto.png') }}" width="40" height="40" />
+			<p>Emisión de Relación</p>
+		</a>
+
+		<a href="{{ url('cpanel_aprobaciones') }}" class="botones_menu_general" style="background-color: #015369;  width:250px;">
+			<img src="{{ asset('bundles/cajachica/images/reportes.png') }}"  width="40" height="40" />
+			<p>Aprobaciones</p>
+		</a>
+
+	</div>
+	<div  id="contenido_menu_2">
+		<a href="{{ url('cpanel_reportes') }}" class="botones_menu_general" style="background-color: #647687;">
+			<img src="{{ asset('bundles/cajachica/images/aprobacion_gastos.png') }}"  width="40" height="40" />
+			<p>Reportes</p>
+		</a>
+
+		<a href="{{ url('cpanel_archivos') }}" class="botones_menu_general"  style="background-color: #f0a30a;  width:250px;" >
+			<img src="{{ asset('bundles/cajachica/images/maestro_tabla.png') }}"  width="40" height="40" />
+			<p>Archivos</p>
+		</a>
+
+		<a href="{{ url('cpanel_ajustes') }}" class="botones_menu_general" style="background-color: #825a2c;">
+			<img src="{{ asset('bundles/cajachica/images/configurar3.png') }}" width="40" height="40" />
+			<p>Configuración</p>
+		</a>
+	</div>
+	<div id="dialog" style="display:none;">
+		<p> </p>
+	</div>
+{% endblock %}

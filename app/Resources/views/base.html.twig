@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}SGGVFT{% endblock %}</title>
+        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/cajachica/css/bootstrap.css')}}"/>
+        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/cajachica/css/base.css')}}"/>
+        <script type="text/javascript" src="{{ asset('bundles/cajachica/js/jquery-1.9.1.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/cajachica/js/jquery-ui.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/cajachica/js/jquery.blockUI.js')}}"></script>
+        <script type="texst/javascript" src="{{ asset('bundles/cajachica/js/bootstrap.js')}}"></script>
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/cajachica/images/favicon.png') }}" />
+        {% block stylesheets %}{% endblock %}
+        {% block head_javascripts %}{% endblock %}
+
+    </head>
+    <body class="{% block pageid '' %}">
+        <div id="cuerpo">
+            {% block header %} {% endblock %}
+
+            {% block body %}{% endblock %}
+
+            {% block footer %}{% endblock %}
+        </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

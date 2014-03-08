@@ -1,0 +1,53 @@
+cajachica_homepage:
+    pattern:  /
+    defaults: { _controller: CajachicaBundle:Default:index }
+
+cajachica_cpanel:
+    pattern:  /cpanel
+    defaults: { _controller: CajachicaBundle:Cpanel:index }
+
+cpanel_menu:
+    pattern:  /cpanel/menu
+    defaults: { _controller: CajachicaBundle:Cpanel:menu }
+
+cpanel_anticipos:
+    pattern:  /cpanel/solicitud-anticipos
+    defaults: { _controller: CajachicaBundle:Anticipos:index }
+
+anticipos_nuevo:
+    pattern:  /cpanel/solicitud-anticipos/nuevo
+    defaults: { _controller: CajachicaBundle:Anticipos:nuevo }
+
+anticipos_lista:
+    pattern:  /cpanel/solicitud-anticipos/lista
+    defaults: { _controller: CajachicaBundle:Anticipos:lista }
+
+anticipos_soporte:
+    pattern:  /cpanel/solicitud-anticipos/soporte
+    defaults: { _controller: CajachicaBundle:Anticipos:soporte }
+
+
+
+cpanel_fondofijo:
+    pattern:  /cpanel/fondo-fijo
+    defaults: { _controller: CajachicaBundle:Fondofijo:index }
+
+cpanel_emisionrelacion:
+    pattern:  /cpanel/emision-de-relacion
+    defaults: { _controller: CajachicaBundle:Emisionrelacion:index }
+
+cpanel_aprobaciones:
+    pattern:  /cpanel/aprobaciones
+    defaults: { _controller: CajachicaBundle:Aprobaciones:index }
+
+cpanel_reportes:
+    pattern:  /cpanel/reportes
+    defaults: { _controller: CajachicaBundle:Reportes:index }
+
+cpanel_archivos:
+    pattern:  /cpanel/archivos
+    defaults: { _controller: CajachicaBundle:Archivos:index }
+
+cpanel_ajustes:
+    pattern:  /cpanel/ajustes
+    defaults: { _controller: CajachicaBundle:Ajustes:index }

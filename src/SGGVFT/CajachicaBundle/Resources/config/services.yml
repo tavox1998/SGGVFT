@@ -1,0 +1,7 @@
+parameters:
+#    cajachica.example.class: SGGVFT\CajachicaBundle\Example
+
+services:
+#    cajachica.example:
+#        class: %cajachica.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,47 @@
+{% extends "CajachicaBundle::layout.html.twig" %}
+
+{% block pageid %}index{% endblock %}
+
+{% block body %}
+
+		<form  action="../sistema_caja_chica/modelo/autenticar.php" enctype="multipart/form-data"  method="post" name="ingresar">
+		<div id="inicio_sesion">
+			Inicio de Sesión
+		</div>
+		<div id="usu_contra">
+			<br>
+		    <input name="usuario" id="usuario"  type="text" placeholder="Introduzca un Usuario" autofocus class="form-control" />
+			<br>
+		    <input name="contrasena" id="contrasena" type="password"  placeholder="Introduzca una Contraseña"   class="form-control" onkeypress="return boton_entrar(event)"/>
+		</div>
+		<div id="footer_usu">
+			<div id="opciones">
+				<button  onclick="limpiar_opciones();" class="estilo_boton" type="button">
+				LIMPIAR
+				</button>
+				<button onclick="entrar();" class="estilo_boton" type="button">
+				ENTRAR
+				</button>
+			</div>
+		</div>
+		<div id="publicidad">
+			<br>
+			<br>
+			<br>
+			<br>
+			ESPACIO PARA PUBLICIDAD
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			ESPACIO PARA PUBLICIDAD
+		</div>
+	</form>
+
+{% endblock %}

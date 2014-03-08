@@ -1,0 +1,4 @@
+cajachica:
+    resource: "@CajachicaBundle/Resources/config/routing.yml"
+    prefix:   /
+
