@@ -1,0 +1,32 @@
+Sbctap:
+    type: entity
+    table: SBCTAP
+    id:
+        id3:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: ID3
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBanc
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Descripcion
+        nrocuenta:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: NroCuenta
+    lifecycleCallbacks: {  }

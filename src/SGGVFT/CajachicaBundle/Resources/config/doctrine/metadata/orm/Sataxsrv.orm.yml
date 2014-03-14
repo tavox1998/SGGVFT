@@ -1,0 +1,33 @@
+Sataxsrv:
+    type: entity
+    table: SATAXSRV
+    id:
+        codserv:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodServ
+        codtaxs:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: CodTaxs
+    fields:
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        esporct:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPorct
+    lifecycleCallbacks: {  }

@@ -1,0 +1,26 @@
+Sbcoba:
+    type: entity
+    table: SBCOBA
+    id:
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBanc
+        tipodoc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: TipoDoc
+    fields:
+        valueint:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ValueInt
+    lifecycleCallbacks: {  }

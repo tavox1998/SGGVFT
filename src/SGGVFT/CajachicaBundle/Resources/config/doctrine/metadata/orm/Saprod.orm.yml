@@ -1,0 +1,333 @@
+Saprod:
+    type: entity
+    table: SAPROD
+    indexes:
+        SAPROD_IX1:
+            columns:
+                - Descrip
+        SAPROD_IX2:
+            columns:
+                - Refere
+    id:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProd
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        codinst:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CodInst
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        descrip2:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip2
+        descrip3:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip3
+        refere:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Refere
+        marca:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Marca
+        unidad:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: Unidad
+        undempaq:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: UndEmpaq
+        cantempaq:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantEmpaq
+        precio1:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Precio1
+        precio2:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Precio2
+        preciou2:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: PrecioU2
+        precio3:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Precio3
+        preciou3:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: PrecioU3
+        preciou:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: PrecioU
+        costact:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostAct
+        costpro:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostPro
+        costant:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostAnt
+        existen:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Existen
+        exunidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExUnidad
+        existencon:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExistenCon
+        exunidadcon:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExUnidadCon
+        compro:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Compro
+        pedido:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Pedido
+        minimo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Minimo
+        maximo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Maximo
+        tara:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Tara
+        descomp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsComp
+        descomi:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsComi
+        desseri:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsSeri
+        esreten:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsReten
+        deslote:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsLote
+        desvence:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsVence
+        edoabp:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: EdoABP
+        espublish:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPublish
+        esimport:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsImport
+        esexento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsExento
+        esenser:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsEnser
+        esoferta:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsOferta
+        espesa:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPesa
+        esempaque:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsEmpaque
+        exdecimal:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ExDecimal
+        diasentr:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DiasEntr
+        fechauv:
+            type: datetime
+            nullable: true
+            column: FechaUV
+        fechauc:
+            type: datetime
+            nullable: true
+            column: FechaUC
+        peso:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Peso
+        volumen:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Volumen
+        undvol:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: UndVol
+    lifecycleCallbacks: {  }

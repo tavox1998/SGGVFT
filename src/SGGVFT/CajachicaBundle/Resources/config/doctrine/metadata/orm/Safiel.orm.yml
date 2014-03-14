@@ -1,0 +1,62 @@
+Safiel:
+    type: entity
+    table: SAFIEL
+    uniqueConstraints:
+        tablefieldname_idx:
+            columns:
+                - tablename
+                - fieldname
+        tablefieldalias_idx:
+            columns:
+                - tablename
+                - fieldalias
+    id:
+        tablename:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            id: true
+        fieldname:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            id: true
+    fields:
+        fieldalias:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        datatype:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        selectable:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+        searchable:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+        sortable:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+        autosearch:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+        mandatory:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+    lifecycleCallbacks: {  }

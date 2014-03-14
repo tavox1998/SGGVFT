@@ -1,0 +1,56 @@
+Saextservices:
+    type: entity
+    table: SAEXTSERVICES
+    id:
+        servicetype:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: ServiceType
+        nroserial:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: NroSerial
+    fields:
+        keyserial:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: KeySerial
+        smslogin:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SMSLogin
+        smspassword:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SMSPassword
+        hostservice:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: HostService
+        portservice:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PortService
+        serviceid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ServiceId
+    lifecycleCallbacks: {  }

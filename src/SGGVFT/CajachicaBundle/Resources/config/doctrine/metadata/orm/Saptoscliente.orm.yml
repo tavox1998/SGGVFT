@@ -1,0 +1,65 @@
+Saptoscliente:
+    type: entity
+    table: SAPTOSCLIENTE
+    id:
+        codclie:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodClie
+        periodo:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            id: true
+            column: Periodo
+    fields:
+        nrofacts:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroFacts
+        credito:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Credito
+        contado:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Contado
+        mtoventas:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoVentas
+        descto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto
+        valorptos:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ValorPtos
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+    lifecycleCallbacks: {  }

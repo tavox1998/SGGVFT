@@ -1,0 +1,25 @@
+Sacodbar:
+    type: entity
+    table: SACODBAR
+    indexes:
+        SACODBAR_IX1:
+            columns:
+                - CodProd
+    id:
+        codalte:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            id: true
+            column: CodAlte
+            generator:
+                strategy: IDENTITY
+    fields:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: CodProd
+    lifecycleCallbacks: {  }

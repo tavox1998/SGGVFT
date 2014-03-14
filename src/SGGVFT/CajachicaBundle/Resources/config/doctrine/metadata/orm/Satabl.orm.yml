@@ -1,0 +1,23 @@
+Satabl:
+    type: entity
+    table: SATABL
+    uniqueConstraints:
+        tablenameidx:
+            columns:
+                - tablename
+    id:
+        tablename:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tablealias:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+    lifecycleCallbacks: {  }

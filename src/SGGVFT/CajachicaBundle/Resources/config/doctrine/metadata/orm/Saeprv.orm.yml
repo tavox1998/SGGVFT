@@ -1,0 +1,99 @@
+Saeprv:
+    type: entity
+    table: SAEPRV
+    id:
+        codprov:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProv
+        periodo:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            id: true
+            column: Periodo
+    fields:
+        credito:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Credito
+        contado:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Contado
+        nrocomps:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroComps
+        mtodevol:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoDevol
+        nrodevol:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroDevol
+        mtopagos:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoPagos
+        nropagos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroPagos
+        mtondebito:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoNDebito
+        nrondebito:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroNDebito
+        mtoncredito:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoNCredito
+        nroncredito:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroNCredito
+        mtoretenimp:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoRetenImp
+    lifecycleCallbacks: {  }

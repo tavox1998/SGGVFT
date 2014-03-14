@@ -1,0 +1,167 @@
+Saprim:
+    type: entity
+    table: SAPRIM
+    id:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProd
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+    fields:
+        codprov:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: CodProv
+        numerod:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroD
+        factor:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Factor
+        moneda:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Moneda
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        costact:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostAct
+        costpro:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostPro
+        costant:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostAnt
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Cantidad
+        precio1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio1
+        precio2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio2
+        precio3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio3
+        costo1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo1
+        costo2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo2
+        costo3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo3
+        costo4:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo4
+        costo5:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo5
+        costo6:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo6
+        costo7:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo7
+        costo8:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo8
+        costo9:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo9
+        costo10:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo10
+    lifecycleCallbacks: {  }

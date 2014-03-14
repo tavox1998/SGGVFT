@@ -1,0 +1,57 @@
+Saacampos:
+    type: entity
+    table: SAACAMPOS
+    id:
+        codtbl:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: CodTbl
+        numgrp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NumGrp
+        nombcpo:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            id: true
+            column: NombCpo
+    fields:
+        aliascpo:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            column: AliasCpo
+        tipocpo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoCpo
+        longitud:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Longitud
+        requerido:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Requerido
+        cbusqueda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CBusqueda
+    lifecycleCallbacks: {  }

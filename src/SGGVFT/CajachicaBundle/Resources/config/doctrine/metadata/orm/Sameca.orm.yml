@@ -1,0 +1,137 @@
+Sameca:
+    type: entity
+    table: SAMECA
+    indexes:
+        SAMECA_IX1:
+            columns:
+                - Descrip
+        SAMECA_IX2:
+            columns:
+                - Clase
+    id:
+        codmeca:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodMeca
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Descrip
+        tipoid3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoID3
+        id3:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: ID3
+        descorder:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: DescOrder
+        clase:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Clase
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        direc1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc1
+        direc2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc2
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        telef:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Telef
+        movil:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Movil
+        email:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Email
+        descomi:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsComi
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        tipoid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoID
+    lifecycleCallbacks: {  }

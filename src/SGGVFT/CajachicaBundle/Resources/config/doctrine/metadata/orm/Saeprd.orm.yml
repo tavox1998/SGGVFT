@@ -1,0 +1,111 @@
+Saeprd:
+    type: entity
+    table: SAEPRD
+    id:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProd
+        periodo:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            id: true
+            column: Periodo
+    fields:
+        cntinicial:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CntInicial
+        exinicial:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExInicial
+        mtocompra:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoCompra
+        cntcompra:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CntCompra
+        mtoventas:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoVentas
+        cntventas:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CntVentas
+        costo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo
+        mtocargos:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoCargos
+        cntcargos:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CntCargos
+        mtodescarg:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoDescarg
+        cntdescarg:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CntDescarg
+        exfinal:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExFinal
+        costofinal:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostoFinal
+    lifecycleCallbacks: {  }

@@ -1,0 +1,69 @@
+Sasucursal:
+    type: entity
+    table: SASUCURSAL
+    id:
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: CodSucu
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: Descrip
+        direc1:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: Direc1
+        direc2:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: Direc2
+        telef:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Telef
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+    lifecycleCallbacks: {  }

@@ -1,0 +1,89 @@
+Saitcv:
+    type: entity
+    table: SAITCV
+    id:
+        codconv:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodConv
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+        coditem:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodItem
+    fields:
+        tipocnv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoCnv
+        frecuencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Frecuencia
+        fechauv:
+            type: datetime
+            nullable: true
+            column: FechaUV
+        medida:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Medida
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        montomax:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoMax
+        comision:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Comision
+        desde:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Desde
+        hasta:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Hasta
+        tipopvp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoPVP
+    lifecycleCallbacks: {  }

@@ -1,0 +1,41 @@
+Saemec:
+    type: entity
+    table: SAEMEC
+    id:
+        codmeca:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodMeca
+        periodo:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            id: true
+            column: Periodo
+    fields:
+        mtoventas:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoVentas
+        cntventas:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CntVentas
+        comision:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Comision
+    lifecycleCallbacks: {  }

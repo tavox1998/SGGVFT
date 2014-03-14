@@ -1,0 +1,109 @@
+Ssusrs:
+    type: entity
+    table: SSUSRS
+    indexes:
+        SSUSRS_IX1:
+            columns:
+                - Descrip
+    id:
+        codusua:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodUsua
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Descrip
+        email:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Email
+        movil:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Movil
+        idusernot:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IdUserNot
+        profile:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Profile
+        codvend:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: CodVend
+        usrdta1:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UsrDta1
+        usrdta2:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UsrDta2
+        usrdta3:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UsrDta3
+        usrdta4:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UsrDta4
+        usrdta5:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UsrDta5
+        sdata1:
+            type: string
+            nullable: false
+            length: 250
+            fixed: false
+            column: SData1
+        sdata2:
+            type: string
+            nullable: false
+            length: 250
+            fixed: false
+            column: SData2
+        sdata3:
+            type: string
+            nullable: false
+            length: 250
+            fixed: false
+            column: SData3
+        sdata6:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: SData6
+    lifecycleCallbacks: {  }

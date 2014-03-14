@@ -1,0 +1,32 @@
+Safldref:
+    type: entity
+    table: SAFLDREF
+    id:
+        tabla:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            id: true
+            column: Tabla
+        ncampo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NCampo
+    fields:
+        tipoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoC
+        descrip:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: Descrip
+    lifecycleCallbacks: {  }

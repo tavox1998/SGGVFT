@@ -1,0 +1,48 @@
+Sargocat:
+    type: entity
+    table: SARGOCAT
+    id:
+        codinst:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: CodInst
+        tiporgo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: TipoRgo
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroUnico
+    fields:
+        desde:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Desde
+        hasta:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Hasta
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+    lifecycleCallbacks: {  }

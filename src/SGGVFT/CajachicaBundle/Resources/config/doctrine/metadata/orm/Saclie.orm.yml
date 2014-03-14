@@ -1,0 +1,327 @@
+Saclie:
+    type: entity
+    table: SACLIE
+    indexes:
+        SACLIE_IX1:
+            columns:
+                - Descrip
+        SACLIE_IX2:
+            columns:
+                - Clase
+    id:
+        codclie:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodClie
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Descrip
+        id3:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: ID3
+        tipoid3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoID3
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        descorder:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: DescOrder
+        clase:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Clase
+        represent:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Represent
+        direc1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc1
+        direc2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc2
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        telef:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Telef
+        movil:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Movil
+        email:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Email
+        fax:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Fax
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        codzona:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodZona
+        codvend:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodVend
+        codconv:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodConv
+        codalte:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: CodAlte
+        tipocli:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoCli
+        tipopvp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoPVP
+        observa:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Observa
+        esmoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsMoneda
+        escredito:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsCredito
+        limitecred:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: LimiteCred
+        diascred:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DiasCred
+        estoleran:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsToleran
+        diastole:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DiasTole
+        intmora:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IntMora
+        descto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto
+        saldo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Saldo
+        pagosa:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PagosA
+        fechauv:
+            type: datetime
+            nullable: true
+            column: FechaUV
+        montouv:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoUV
+        numerouv:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroUV
+        fechaup:
+            type: datetime
+            nullable: true
+            column: FechaUP
+        montoup:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoUP
+        numeroup:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroUP
+        montomax:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoMax
+        mtomaxcred:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoMaxCred
+        prompago:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PromPago
+        reteniva:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: RetenIVA
+        saldoptos:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoPtos
+        edokc:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: EdoKC
+        descripext:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: DescripExt
+        tipoid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoID
+    lifecycleCallbacks: {  }

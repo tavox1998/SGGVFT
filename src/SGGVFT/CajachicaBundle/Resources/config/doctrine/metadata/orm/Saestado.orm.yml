@@ -1,0 +1,25 @@
+Saestado:
+    type: entity
+    table: SAESTADO
+    id:
+        descrip:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            id: true
+            column: Descrip
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Estado
+    fields:
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+    lifecycleCallbacks: {  }

@@ -1,0 +1,256 @@
+Sbopcxpp:
+    type: entity
+    table: SBOPCXPP
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+        codprov:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProv
+    fields:
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        edopago:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EdoPago
+        nroidop:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroIDOP
+        clase:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Clase
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: CodBanc
+        fechae:
+            type: datetime
+            nullable: false
+            column: FechaE
+        codoper:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: CodOper
+        codbene:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: CodBene
+        descripcion:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Descripcion
+        nroopago:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: NroOPago
+        documento:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Documento
+        nroutrnb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroUTrnB
+        numerod:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: NumeroD
+        document:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            column: Document
+        nrourecp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroURecP
+        nrouretp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroURetP
+        nrodcts:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroDcts
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        mtopagos:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoPagos
+        mtoreten:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoReten
+        porcent:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Porcent
+        usaidb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UsaIDB
+        ctaidb:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: CtaIDB
+        dctaidb:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: DCtaIDB
+        cenctoidb:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: CenCtoIdb
+        mtoidb:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoIDB
+        notas1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas1
+        notas2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas2
+        notas3:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas3
+        notas4:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas4
+        notas5:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas5
+        notas6:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas6
+        notas7:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas7
+        notas8:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas8
+        notas9:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas9
+        notas10:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas10
+        comentario1:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Comentario1
+        comentario2:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Comentario2
+        comentario3:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Comentario3
+    lifecycleCallbacks: {  }

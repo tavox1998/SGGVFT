@@ -1,0 +1,72 @@
+Sbfdcdet:
+    type: entity
+    table: SBFDCDET
+    indexes:
+        SBFDCDET_IX1:
+            columns:
+                - NLinea
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+            generator:
+                strategy: IDENTITY
+    fields:
+        nlinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NLinea
+        tipoope:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoOpe
+        codcta:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: CodCta
+        descripcion:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Descripcion
+        tdc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TDC
+        reqban:
+            type: text
+            nullable: false
+            length: 16
+            fixed: false
+            column: ReqBan
+        reqcts:
+            type: text
+            nullable: false
+            length: 16
+            fixed: false
+            column: ReqCts
+        reqope:
+            type: text
+            nullable: false
+            length: 16
+            fixed: false
+            column: ReqOpe
+        stcdcd:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: StCDCD
+    lifecycleCallbacks: {  }

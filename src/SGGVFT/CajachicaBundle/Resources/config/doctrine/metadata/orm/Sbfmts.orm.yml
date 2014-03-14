@@ -1,0 +1,26 @@
+Sbfmts:
+    type: entity
+    table: SBFMTS
+    id:
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBanc
+        tipoope:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: TipoOpe
+    fields:
+        descripcion:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Descripcion
+    lifecycleCallbacks: {  }

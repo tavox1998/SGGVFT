@@ -1,0 +1,68 @@
+Sapvpr:
+    type: entity
+    table: SAPVPR
+    id:
+        codprov:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProv
+        coditem:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: '0'
+            id: true
+            column: CodItem
+    fields:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: NroUnico
+        refere:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Refere
+        tipocom:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TipoCom
+        numerod:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroD
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Cantidad
+        costo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        esserv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsServ
+    lifecycleCallbacks: {  }

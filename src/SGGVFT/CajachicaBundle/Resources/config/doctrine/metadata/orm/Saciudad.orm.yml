@@ -1,0 +1,31 @@
+Saciudad:
+    type: entity
+    table: SACIUDAD
+    id:
+        descrip:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            id: true
+            column: Descrip
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Ciudad
+    fields:
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+    lifecycleCallbacks: {  }

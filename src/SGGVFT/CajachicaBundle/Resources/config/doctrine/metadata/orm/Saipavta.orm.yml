@@ -1,0 +1,131 @@
+Saipavta:
+    type: entity
+    table: SAIPAVTA
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+        tipofac:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            id: true
+            column: TipoFac
+        numerod:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: NumeroD
+    fields:
+        tipopag:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoPag
+        codpago:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodPago
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        propina:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Propina
+        impuesto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Impuesto
+        retenct:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: RetencT
+        descrip1:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Descrip1
+        cuenta:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Cuenta
+        nrolote:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: NroLote
+        afiliado:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Afiliado
+        terminal:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Terminal
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        aprobado:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Aprobado
+        refere:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Refere
+        traza:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Traza
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '00000'
+            column: CodSucu
+    lifecycleCallbacks: {  }

@@ -1,0 +1,43 @@
+Sapais:
+    type: entity
+    table: SAPAIS
+    id:
+        descrip:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            id: true
+            column: Descrip
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Pais
+    fields:
+        spais:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SPais
+        sestado:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SEstado
+        sciudad:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SCiudad
+        smunicipio:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SMunicipio
+    lifecycleCallbacks: {  }

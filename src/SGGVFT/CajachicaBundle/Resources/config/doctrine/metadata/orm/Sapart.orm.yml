@@ -1,0 +1,44 @@
+Sapart:
+    type: entity
+    table: SAPART
+    id:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProd
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+    fields:
+        codalte:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: CodAlte
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Cantidad
+        esunid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsUnid
+        esserv:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsServ
+    lifecycleCallbacks: {  }

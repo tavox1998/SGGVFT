@@ -1,12 +1,29 @@
 {% extends "CajachicaBundle::layout_cpanel.html.twig" %}
 
 {% block body %}
-    <br><br>Reportes 
-<ul>
-    {% for list in lists %}
-	<li>{{loop.index}}</li>
-	{% else %}
-	<li>Recurso no encontrado!</li>
-    {% endfor %}
-</ul>
+    {# total items count #}
+<div class="count">
+    {{ pagination.getTotalItemCount }}
+</div>
+<table>
+<br>
+<br>
+<tr>
+{# sorting of properties based on query components #}
+    <th>{{ knp_pagination_sortable(pagination, 'Id', 'a.codusua') }}</th>
+    <th{% if pagination.isSorted('a.descrip') %} class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Title', 'a.email') }}</th>
+</tr>
+
+{# table body #}
+{% for article in pagination %}
+<tr {% if loop.index is odd %}class="color"{% endif %}>
+    <td>{{ article.codusua }}</td>
+    <td>{{ article.descrip }}</td>
+</tr>
+{% endfor %}
+</table>
+{# display navigation #}
+<div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+</div>
 {% endblock %}

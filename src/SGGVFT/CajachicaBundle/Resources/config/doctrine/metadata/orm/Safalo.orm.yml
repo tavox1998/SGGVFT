@@ -1,0 +1,53 @@
+Safalo:
+    type: entity
+    table: SAFALO
+    indexes:
+        SAFALO_IX1:
+            columns:
+                - Descrip
+    id:
+        codfacl:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodFacL
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Descrip
+        diascred:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DiasCred
+        codvend:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodVend
+        codoper:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodOper
+        tipofac:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoFac
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,68 @@
+Saclpr:
+    type: entity
+    table: SACLPR
+    indexes:
+        SACLPR_IX1:
+            columns:
+                - CodClie
+                - CodItem
+    id:
+        coditem:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodItem
+        codclie:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodClie
+    fields:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: NroUnico
+        esserv:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsServ
+        refere:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: REFERE
+        tipofac:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TIPOFAC
+        numerod:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+        precio:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+        fechae:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

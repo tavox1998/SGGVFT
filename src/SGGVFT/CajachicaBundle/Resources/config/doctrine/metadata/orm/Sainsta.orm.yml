@@ -1,0 +1,103 @@
+Sainsta:
+    type: entity
+    table: SAINSTA
+    indexes:
+        SAINSTA_IX1:
+            columns:
+                - CodAlte
+    id:
+        codinst:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: CodInst
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        codalte:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: CodAlte
+        nivel:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Nivel
+        inspadre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: InsPadre
+        descto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto
+        descomp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsComp
+        desseri:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsSeri
+        deslote:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsLote
+        descomi:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsComi
+        descorrel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsCorrel
+        digitosc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DigitosC
+        destabla:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsTabla
+        tipoins:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoIns
+        edokc:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: EdoKC
+    lifecycleCallbacks: {  }

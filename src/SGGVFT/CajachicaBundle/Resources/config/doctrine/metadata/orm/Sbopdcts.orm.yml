@@ -1,0 +1,78 @@
+Sbopdcts:
+    type: entity
+    table: SBOPDCTS
+    id:
+        codprov:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProv
+        nroopago:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: NroOPago
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLinea
+    fields:
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        codcta:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: CodCta
+        descripcion:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Descripcion
+        codcencto:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: CodCenCto
+        codtercero:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: CodTercero
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        mtodb:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoDb
+        mtocr:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoCr
+    lifecycleCallbacks: {  }

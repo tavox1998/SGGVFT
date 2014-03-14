@@ -1,0 +1,108 @@
+Saitor:
+    type: entity
+    table: SAITOR
+    id:
+        tipotra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: TipoTra
+        numerok:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: NumeroK
+        codubic:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodUbic
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLinea
+    fields:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: CodProd
+        tipoopi:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TipoOpI
+        status:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Status
+        precio:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Cantidad
+        descto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto
+        mtotax1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax1
+        mtotax2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax2
+        mtotax3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax3
+        mtotax4:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax4
+        mtotax5:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax5
+    lifecycleCallbacks: {  }

@@ -1,0 +1,112 @@
+Sataxes:
+    type: entity
+    table: SATAXES
+    indexes:
+        SATAXES_IX1:
+            columns:
+                - Descrip
+    id:
+        codtaxs:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: CodTaxs
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        mtotax:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        esfijo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsFijo
+        esreten:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsReten
+        codoper:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodOper
+        esporct:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPorct
+        escosto:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsCosto
+        tipoiva:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoIVA
+        eslibroi:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsLibroI
+        espartic:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPartic
+        estaxventa:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsTaxVenta
+        estaxcompra:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsTaxCompra
+        montomax:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoMax
+        sustraendo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Sustraendo
+    lifecycleCallbacks: {  }

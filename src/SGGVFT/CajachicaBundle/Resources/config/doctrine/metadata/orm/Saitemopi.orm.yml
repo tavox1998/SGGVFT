@@ -1,0 +1,326 @@
+Saitemopi:
+    type: entity
+    table: SAITEMOPI
+    id:
+        tipoopi:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            id: true
+            column: TipoOpI
+        numerod:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: NumeroD
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLinea
+    fields:
+        status:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: Status
+        coditem:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: CodItem
+        codubic:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUbic
+        codubic2:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUbic2
+        descrip1:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip1
+        descrip2:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip2
+        descrip3:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip3
+        descrip4:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip4
+        descrip5:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip5
+        descrip6:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip6
+        descrip7:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip7
+        descrip8:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip8
+        descrip9:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip9
+        descrip10:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip10
+        refere:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Refere
+        signo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Signo
+        tara:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Tara
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Cantidad
+        cantidado:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadO
+        existantu:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExistAntU
+        existant:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExistAnt
+        existantu2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExistAntU2
+        existant2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExistAnt2
+        cantidadc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadC
+        cantidadu:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadU
+        cantidada:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadA
+        cantidadua:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadUA
+        costo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo
+        descto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto
+        codmeca:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodMeca
+        totalitem:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TotalItem
+        nrounicol:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroUnicoL
+        nrolote:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NroLote
+        precio:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio
+        preciou:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioU
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechal:
+            type: datetime
+            nullable: true
+            column: FechaL
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        esserv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsServ
+        esunid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsUnid
+        esfreep:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsFreeP
+        espesa:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPesa
+        esexento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsExento
+        usaserv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UsaServ
+        deslote:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsLote
+        desseri:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsSeri
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '00000'
+            column: CodSucu
+        nrolineac:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroLineaC
+    lifecycleCallbacks: {  }

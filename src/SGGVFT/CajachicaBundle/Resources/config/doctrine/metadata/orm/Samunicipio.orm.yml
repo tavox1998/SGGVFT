@@ -1,0 +1,37 @@
+Samunicipio:
+    type: entity
+    table: SAMUNICIPIO
+    id:
+        descrip:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            id: true
+            column: Descrip
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: Municipio
+    fields:
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+    lifecycleCallbacks: {  }

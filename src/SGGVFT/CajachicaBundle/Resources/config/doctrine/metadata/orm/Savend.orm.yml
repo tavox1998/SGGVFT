@@ -1,0 +1,174 @@
+Savend:
+    type: entity
+    table: SAVEND
+    indexes:
+        SAVEND_IX1:
+            columns:
+                - Descrip
+        SAVEND_IX2:
+            columns:
+                - Clase
+    id:
+        codvend:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodVend
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Descrip
+        tipoid3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoID3
+        id3:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: ID3
+        descorder:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: DescOrder
+        clase:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Clase
+        direc1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc1
+        direc2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc2
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        telef:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Telef
+        movil:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Movil
+        email:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Email
+        fechauv:
+            type: datetime
+            nullable: true
+            column: FechaUV
+        fechauc:
+            type: datetime
+            nullable: true
+            column: FechaUC
+        escomipv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsComiPV
+        escomitv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsComiTV
+        escomitc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsComiTC
+        escomitu:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsComiTU
+        escomidt:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsComiDT
+        escomiut:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsComiUT
+        escomitm:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsComiTM
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        tipoid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoID
+    lifecycleCallbacks: {  }

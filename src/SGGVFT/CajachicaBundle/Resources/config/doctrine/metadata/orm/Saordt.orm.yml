@@ -1,0 +1,162 @@
+Saordt:
+    type: entity
+    table: SAORDT
+    id:
+        tipotra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: TipoTra
+        numerok:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: NumeroK
+        codubic:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodUbic
+    fields:
+        status:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Status
+        tipoopi:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TipoOpI
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        tipocli:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoCli
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        direc1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc1
+        direc2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc2
+        direc3:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc3
+        telef:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Telef
+        id3:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: ID3
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        descto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto
+        mtotax1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax1
+        mtotax2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax2
+        mtotax3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax3
+        mtotax4:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax4
+        mtotax5:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax5
+        esexpickup:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsExPickup
+        tipopago:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: TipoPago
+        descrippago:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: DescripPago
+        courier:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Courier
+    lifecycleCallbacks: {  }

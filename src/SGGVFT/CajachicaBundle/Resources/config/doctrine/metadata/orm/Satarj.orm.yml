@@ -1,0 +1,67 @@
+Satarj:
+    type: entity
+    table: SATARJ
+    indexes:
+        SATARJ_IX1:
+            columns:
+                - Descrip
+        SATARJ_IX2:
+            columns:
+                - Clase
+    id:
+        codtarj:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodTarj
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        clase:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Clase
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        impuesto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Impuesto
+        diasdif:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DiasDif
+        basereten:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: BaseReten
+        reteniva:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 3
+            default: '0'
+            column: RetenIVA
+    lifecycleCallbacks: {  }

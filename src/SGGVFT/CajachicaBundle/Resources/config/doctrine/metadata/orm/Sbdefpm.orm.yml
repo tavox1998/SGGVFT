@@ -1,0 +1,26 @@
+Sbdefpm:
+    type: entity
+    table: SBDEFPM
+    id:
+        ndefapp:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NDefAPP
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Descripcion
+        entidad:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Entidad
+    lifecycleCallbacks: {  }

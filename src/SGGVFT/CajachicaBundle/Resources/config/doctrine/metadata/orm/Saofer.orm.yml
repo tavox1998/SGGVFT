@@ -1,0 +1,75 @@
+Saofer:
+    type: entity
+    table: SAOFER
+    indexes:
+        SAOFER_IX1:
+            columns:
+                - Descrip
+    id:
+        numerod:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: NumeroD
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            column: Descrip
+        codesta:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodEsta
+        codusua:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUsua
+        tipoofe:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoOfe
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        autori:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Autori
+        respon:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Respon
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        frecuencia:
+            type: string
+            nullable: true
+            length: 7
+            fixed: false
+            column: Frecuencia
+    lifecycleCallbacks: {  }

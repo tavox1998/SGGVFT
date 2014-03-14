@@ -1,0 +1,176 @@
+Saserv:
+    type: entity
+    table: SASERV
+    indexes:
+        SASERV_IX1:
+            columns:
+                - Descrip
+        SASERV_IX2:
+            columns:
+                - Clase
+    id:
+        codserv:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodServ
+            generator:
+                strategy: IDENTITY
+    fields:
+        codinst:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CodInst
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        descrip2:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip2
+        descrip3:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip3
+        clase:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Clase
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        unidad:
+            type: string
+            nullable: true
+            length: 6
+            fixed: false
+            column: Unidad
+        precio1:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Precio1
+        precioi1:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: PrecioI1
+        precio2:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Precio2
+        precioi2:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: PrecioI2
+        precio3:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Precio3
+        precioi3:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: PrecioI3
+        costo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo
+        esexento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsExento
+        esreten:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsReten
+        esporcost:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPorCost
+        usaserv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UsaServ
+        comision:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Comision
+        esporcomi:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPorComi
+        fechauv:
+            type: datetime
+            nullable: true
+            column: FechaUV
+        fechauc:
+            type: datetime
+            nullable: true
+            column: FechaUC
+        esimport:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsImport
+        esventa:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: EsVenta
+        escompra:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: EsCompra
+    lifecycleCallbacks: {  }

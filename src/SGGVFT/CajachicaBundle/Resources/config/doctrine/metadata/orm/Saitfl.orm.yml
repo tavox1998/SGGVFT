@@ -1,0 +1,56 @@
+Saitfl:
+    type: entity
+    table: SAITFL
+    indexes:
+        SAITFL_IX1:
+            columns:
+                - CodItem
+                - CodFacL
+    id:
+        codfacl:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodFacL
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+    fields:
+        esserv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsServ
+        esunid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsUnid
+        coditem:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: CodItem
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Cantidad
+        precio:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio
+    lifecycleCallbacks: {  }

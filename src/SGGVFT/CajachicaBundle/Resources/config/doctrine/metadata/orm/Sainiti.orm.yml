@@ -1,0 +1,69 @@
+Sainiti:
+    type: entity
+    table: SAINITI
+    id:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProd
+        codubic:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodUbic
+        periodo:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            id: true
+            column: Periodo
+    fields:
+        costo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo
+        exinicial:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExInicial
+        exundini:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExUndIni
+        exfinal:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExFinal
+        exundfinal:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExUndFinal
+        costofinal:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostoFinal
+    lifecycleCallbacks: {  }

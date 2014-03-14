@@ -1,0 +1,62 @@
+Sbappd:
+    type: entity
+    table: SBAPPD
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+        nroppal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroPpal
+    fields:
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            column: CodBanc
+        documento:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Documento
+        rif:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: RIF
+        descripcion:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Descripcion
+        descrippago:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: DescripPago
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        numerod:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            column: NumeroD
+    lifecycleCallbacks: {  }

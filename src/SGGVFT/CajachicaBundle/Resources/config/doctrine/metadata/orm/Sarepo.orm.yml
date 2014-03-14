@@ -1,0 +1,28 @@
+Sarepo:
+    type: entity
+    table: SAREPO
+    indexes:
+        folderidx:
+            columns:
+                - folderid
+        parentidx:
+            columns:
+                - parentid
+    id:
+        foldername:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            id: true
+        parentid:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+    fields:
+        folderid:
+            type: integer
+            nullable: false
+            unsigned: false
+    lifecycleCallbacks: {  }

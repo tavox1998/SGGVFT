@@ -1,0 +1,50 @@
+Saagrupos:
+    type: entity
+    table: SAAGRUPOS
+    id:
+        codtbl:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: CodTbl
+        numgrp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NumGrp
+    fields:
+        nombregrp:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: NombreGrp
+        aliasgrp:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: AliasGrp
+        estrans:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsTrans
+        nmeses:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NMeses
+        nmovim:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NMovim
+    lifecycleCallbacks: {  }

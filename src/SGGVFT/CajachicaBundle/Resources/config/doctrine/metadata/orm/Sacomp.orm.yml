@@ -1,0 +1,551 @@
+Sacomp:
+    type: entity
+    table: SACOMP
+    indexes:
+        SACOMP_IX1:
+            columns:
+                - TipoCom
+                - NumeroD
+        SACOMP_IX2:
+            columns:
+                - TipoCom
+                - Descrip
+    id:
+        tipocom:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            id: true
+            column: TipoCom
+        numerod:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: NumeroD
+        codprov:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProv
+    fields:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: NroUnico
+        status:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: Status
+        nroctrol:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NroCtrol
+        codsucu:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: CodSucu
+        codesta:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodEsta
+        codusua:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUsua
+        signo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Signo
+        fechat:
+            type: datetime
+            nullable: true
+            column: FechaT
+        tipotra:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TipoTra
+        otipo:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OTipo
+        onumero:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ONumero
+        numerop:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroP
+        numeroe:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroE
+        numeroc:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroC
+        numeron:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroN
+        numeror:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroR
+        moneda:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: Moneda
+        factor:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Factor
+        montomex:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoMEx
+        codubic:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUbic
+        descrip:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Descrip
+        direc1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc1
+        direc2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc2
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        telef:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Telef
+        id3:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: ID3
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        otrosc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: OtrosC
+        mtotax:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax
+        fletes:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Fletes
+        tgravable:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TGravable
+        texento:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TExento
+        desctop:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: DesctoP
+        esconsig:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsConsig
+        reteniva:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: RetenIVA
+        fechai:
+            type: datetime
+            nullable: true
+            column: FechaI
+        fechar:
+            type: datetime
+            nullable: true
+            column: FechaR
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        canceli:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelI
+        cancele:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelE
+        cancelt:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelT
+        cancelc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelC
+        cancela:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelA
+        cancelg:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelG
+        mtototal:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTotal
+        contado:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Contado
+        credito:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Credito
+        saldoact:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoAct
+        mtopagos:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoPagos
+        mtoncredito:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoNCredito
+        mtondebito:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoNDebito
+        descto1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto1
+        mtoint1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoInt1
+        descto2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto2
+        mtoint2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoInt2
+        mtofinanc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoFinanc
+        detalchq:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: DetalChq
+        totalprd:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TotalPrd
+        totalsrv:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TotalSrv
+        ordenc:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: OrdenC
+        codoper:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodOper
+        ngiros:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NGiros
+        nmeses:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NMeses
+        notas1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas1
+        notas2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas2
+        notas3:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas3
+        notas4:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas4
+        notas5:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas5
+        notas6:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas6
+        notas7:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas7
+        notas8:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas8
+        notas9:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas9
+        notas10:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas10
+        establreten:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: EstablReten
+        ptoemireten:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: PtoEmiReten
+        feccadreten:
+            type: datetime
+            nullable: true
+            column: FecCadReten
+        autsrireten:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: AutSRIReten
+        tipotrae:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoTraE
+    lifecycleCallbacks: {  }

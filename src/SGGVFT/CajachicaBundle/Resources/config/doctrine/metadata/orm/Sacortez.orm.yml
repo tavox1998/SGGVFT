@@ -1,0 +1,190 @@
+Sacortez:
+    type: entity
+    table: SACORTEZ
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+            generator:
+                strategy: IDENTITY
+    fields:
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: CodSucu
+        codesta:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: CodEsta
+        codusua:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUsua
+        numerop:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: NumeroP
+        numeroc:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroC
+        numeroz:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroZ
+        mtototal:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTotal
+        numerof:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroF
+        nrofacts:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroFacts
+        numeror:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroR
+        texento:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TExento
+        mtotax:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax
+        mtototal1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTotal1
+        mtotax1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax1
+        mtototal2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTotal2
+        mtotax2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax2
+        mtototal3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTotal3
+        mtotax3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax3
+        tdevexento:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TDevExento
+        devmtototal1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: DevMtoTotal1
+        devmtotax1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: DevMtoTax1
+        devmtototal2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: DevMtoTotal2
+        devmtotax2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: DevMtoTax2
+        devmtototal3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: DevMtoTotal3
+        devmtotax3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: DevMtoTax3
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        nrodevol:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroDevol
+    lifecycleCallbacks: {  }

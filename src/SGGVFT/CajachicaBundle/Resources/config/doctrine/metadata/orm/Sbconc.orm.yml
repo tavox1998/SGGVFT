@@ -1,0 +1,171 @@
+Sbconc:
+    type: entity
+    table: SBCONC
+    id:
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBanc
+        noconc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NoConc
+    fields:
+        codusua:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodUsua
+        descripcion:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Descripcion
+        nocuenta:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NoCuenta
+        fechai:
+            type: datetime
+            nullable: false
+            column: FechaI
+        saldoi:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoI
+        nodepoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoDepoC
+        nocredc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoCredC
+        nocheqc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoCheqC
+        nondebc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoNDebC
+        mtdepoc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtDepoC
+        mtcredc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtCredC
+        mtcheqc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtCheqC
+        mtndebc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtNDebC
+        nodepot:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoDepoT
+        nocredt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoCredT
+        nocheqt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoCheqT
+        nondebt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NoNDebT
+        mtdepot:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtDepoT
+        mtcredt:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtCredT
+        mtcheqt:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtCheqT
+        mtndebt:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtNDebT
+        fechaf:
+            type: datetime
+            nullable: false
+            column: FechaF
+        saldof:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoF
+        saldolib:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoLib
+    lifecycleCallbacks: {  }

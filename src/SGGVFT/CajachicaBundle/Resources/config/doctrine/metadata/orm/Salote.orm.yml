@@ -1,0 +1,133 @@
+Salote:
+    type: entity
+    table: SALOTE
+    indexes:
+        SALOTE_IX1:
+            columns:
+                - CodProd
+                - CodUbic
+                - NroLote
+        SALOTE_IX2:
+            columns:
+                - CodProd
+                - CodUbic
+                - FechaE
+    id:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProd
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+    fields:
+        codubic:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUbic
+        nrolote:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NroLote
+        costo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo
+        precio:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio
+        preciou:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioU
+        precio1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio1
+        preciou1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioU1
+        precio2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio2
+        preciou2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioU2
+        precio3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio3
+        preciou3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioU3
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Cantidad
+        cantidadu:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadU
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        puestoi:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: PuestoI
+    lifecycleCallbacks: {  }

@@ -1,0 +1,50 @@
+Saesta:
+    type: entity
+    table: SAESTA
+    id:
+        codesta:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodEsta
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '00000'
+            id: true
+            column: CodSucu
+    fields:
+        descrip:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Descrip
+        codusua:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: '0'
+            column: CodUsua
+        autsri:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: AutSRI
+        fechasri:
+            type: datetime
+            nullable: true
+            column: FechaSRI
+        ptoemision:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: PtoEmision
+    lifecycleCallbacks: {  }

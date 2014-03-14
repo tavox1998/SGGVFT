@@ -46,27 +46,23 @@ assetic:
 doctrine:
     dbal:
         default_connection:   default
-            connections:
-                default:
-                    driver:   "%database_driver%"
-                    host:     "%database_host%"
-                    port:     "%database_port%"
-                    dbname:   "%database_name%"
-                    user:     "%database_user%"
-                    password: "%database_password%"
-                    charset:  UTF8
-                saint:
-                    driver:   "%database_driver2%"
-                    host:     "%database_host2%"
-                    port:     "%database_port2%"
-                    dbname:   "%database_name2%"
-                    user:     "%database_user2%"
-                    password: "%database_password2%"
-                    charset:  UTF8
-        # if using pdo_sqlite as your database driver, add the path in parameters.yml
-
-        # e.g. database_path: "%kernel.root_dir%/data/data.db3"
-        # path:     "%database_path%"
+        connections:
+            default:
+                driver:   "%database_driver%"
+                host:     "%database_host%"
+                port:     "%database_port%"
+                dbname:   "%database_name%"
+                user:     "%database_user%"
+                password: "%database_password%"
+                charset:  UTF8
+            customer:
+                driver:   "%database_driver2%"
+                host:     "%database_host2%"
+                port:     "%database_port2%"
+                dbname:   "%database_name2%"
+                user:     "%database_user2%"
+                password: "%database_password2%"
+                charset:  UTF8
 
     orm:
         default_entity_manager:   default
@@ -75,10 +71,13 @@ doctrine:
                 connection:       default
                 mappings:
                     CajachicaBundle: ~
-            saint:
-                connection:       saint
+            customer:
+                connection:       customer
                 mappings:
                     CajachicaBundle: ~
+        # if using pdo_sqlite as your database driver, add the path in parameters.yml
+        # e.g. database_path: "%kernel.root_dir%/data/data.db3"
+        # path:     "%database_path%"
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -87,3 +86,14 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+    
+knp_paginator:
+    page_range: 5                      # default page range used in pagination control
+    default_options:
+        page_name: page                # page query parameter name
+        sort_field_name: sort          # sort field query parameter name
+        sort_direction_name: direction # sort direction query parameter name
+        distinct: true                 # ensure distinct results, useful when ORM queries are using GROUP BY statements
+    template:
+        pagination: KnpPaginatorBundle:Pagination:sliding.html.twig     # sliding pagination controls template
+        sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig # sort link template

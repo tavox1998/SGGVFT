@@ -1,0 +1,145 @@
+Sbctas:
+    type: entity
+    table: SBCTAS
+    indexes:
+        SBCTAS_IX1:
+            columns:
+                - Descripcion
+    id:
+        codcta:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodCta
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Descripcion
+        iea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IEA
+        ecg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ECG
+        grupo:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Grupo
+        ufecha:
+            type: datetime
+            nullable: true
+            column: UFecha
+        udcto:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: UDcto
+        ubanco:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: UBanco
+        ubenef:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UBenef
+        ucoment1:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UComent1
+        ucoment2:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UComent2
+        umonto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: UMonto
+        esbanco:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsBanco
+        tdc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TDC
+        saldoact:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoAct
+        tercero:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Tercero
+        codcentro:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodCentro
+        ctacf:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CtaCF
+        ctamov:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CtaMov
+        ctater:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CtaTer
+        ctacc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CtaCC
+        ctabase:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CtaBase
+    lifecycleCallbacks: {  }

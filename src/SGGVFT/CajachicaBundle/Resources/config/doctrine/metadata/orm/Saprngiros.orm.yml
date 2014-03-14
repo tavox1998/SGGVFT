@@ -1,0 +1,34 @@
+Saprngiros:
+    type: entity
+    table: SAPRNGIROS
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroUnico
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipofac:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            column: TipoFac
+        numerod:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: NumeroD
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '00000'
+            column: CodSucu
+    lifecycleCallbacks: {  }

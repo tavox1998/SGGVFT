@@ -1,0 +1,46 @@
+Sazona:
+    type: entity
+    table: SAZONA
+    indexes:
+        SAZONA_IX1:
+            columns:
+                - Descrip
+        SAZONA_IX2:
+            columns:
+                - Clase
+    id:
+        codzona:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodZona
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        clase:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Clase
+        represent:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Represent
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+    lifecycleCallbacks: {  }

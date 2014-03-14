@@ -1,0 +1,49 @@
+Saprsri:
+    type: entity
+    table: SAPRSRI
+    id:
+        codprov:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CODPROV
+        establreten:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: EstablReten
+        ptoemireten:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: PtoEmiReten
+    fields:
+        feccadreten:
+            type: datetime
+            nullable: true
+            column: FecCadReten
+        nroinicio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroInicio
+        nrofinal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroFinal
+        autsrireten:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: AutSRIReten
+    lifecycleCallbacks: {  }

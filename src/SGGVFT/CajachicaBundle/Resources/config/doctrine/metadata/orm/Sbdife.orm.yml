@@ -1,0 +1,189 @@
+Sbdife:
+    type: entity
+    table: SBDIFE
+    id:
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBanc
+        nope:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NOpe
+        nlinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NLinea
+    fields:
+        codusua:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodUsua
+        codesta:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodEsta
+        cdcd:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CDCD
+        documento:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            column: Documento
+        fecha:
+            type: datetime
+            nullable: false
+            column: Fecha
+        fechalib:
+            type: datetime
+            nullable: false
+            column: FechaLib
+        beneficiario:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Beneficiario
+        tipopgo:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: TipoPgo
+        descpgo:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: DescPgo
+        dctopgo:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: DctoPgo
+        descripcion:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Descripcion
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        tipoope:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoOpe
+        montoe:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoE
+        nbanco:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: NBanco
+        numeroc:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: NumeroC
+        plazac:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PlazaC
+        montoc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoC
+        fechac:
+            type: datetime
+            nullable: true
+            column: FechaC
+        codtarj:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodTarj
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        montobt:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoBT
+        baseit:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: BaseIT
+        comit:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ComiT
+        impt:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ImpT
+        netot:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: NetoT
+        fechat:
+            type: datetime
+            nullable: true
+            column: FechaT
+    lifecycleCallbacks: {  }

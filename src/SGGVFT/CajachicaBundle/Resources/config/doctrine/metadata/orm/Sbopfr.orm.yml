@@ -1,0 +1,76 @@
+Sbopfr:
+    type: entity
+    table: SBOPFR
+    indexes:
+        SBOPFR_IX1:
+            columns:
+                - Descripcion
+        SBOPFR_IX2:
+            columns:
+                - TipoOpe
+                - Descripcion
+    id:
+        codopfr:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodOpFr
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Descripcion
+        codbene:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodBene
+        tipoope:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoOpe
+        fechapp:
+            type: datetime
+            nullable: false
+            column: FechaPP
+        avisar:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Avisar
+        siempre:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Siempre
+        npagos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NPagos
+        frecuencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Frecuencia
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+    lifecycleCallbacks: {  }

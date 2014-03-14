@@ -1,0 +1,44 @@
+Sausrrep:
+    type: entity
+    table: SAUSRREP
+    indexes:
+        SAUSRREP_IX1:
+            columns:
+                - SisSnt
+                - CodMenu
+                - NroRpt
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+            generator:
+                strategy: IDENTITY
+    fields:
+        sissnt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SisSnt
+        codmenu:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: CodMenu
+        nrorpt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroRpt
+        descrip:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Descrip
+    lifecycleCallbacks: {  }

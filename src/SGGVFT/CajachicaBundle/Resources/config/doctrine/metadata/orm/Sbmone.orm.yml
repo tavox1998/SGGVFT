@@ -1,0 +1,44 @@
+Sbmone:
+    type: entity
+    table: SBMONE
+    indexes:
+        SBMONE_IX1:
+            columns:
+                - Descripcion
+    id:
+        codmone:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: CodMone
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Descripcion
+        pais:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: Pais
+        factor:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Factor
+        esbase:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsBase
+    lifecycleCallbacks: {  }

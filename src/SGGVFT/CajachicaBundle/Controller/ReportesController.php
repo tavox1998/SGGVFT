@@ -3,7 +3,8 @@
 namespace SGGVFT\CajachicaBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use SGGVFT\CajachicaBundle\Entity\AutorizarUsuario;
+use SGGVFT\CajachicaBundle\Entity\UsuarioSaint;
+
 class ReportesController extends Controller
 {
 	public function indexAction()
@@ -21,14 +22,21 @@ class ReportesController extends Controller
     		 )
     	);
 
-    	 $em = $this->getDoctrine()->getManager('saint');
-    	 $db_reports = $em->getRepository("CajachicaBundle:UsuarioSaint")->findAll();
+    	$em = $this->getDoctrine()->getManager('customer');
+    	$db_reports = $em->getRepository("CajachicaBundle:Ssusrs")->findAll();
+
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+        $db_reports,
+        $this->get('request')->query->get('page', 1)/*page number*/,
+        5/*limit per page*/
+    );
+
 
         return $this->render(
-        	'CajachicaBundle:Reportes:index.html.twig',
-        	array(
-        		'lists' => $db_reports
-        	)
-        	);
+        	'CajachicaBundle:Reportes:index.html.twig', array(
+                'pagination' => $pagination
+            )
+        );
     }
 }

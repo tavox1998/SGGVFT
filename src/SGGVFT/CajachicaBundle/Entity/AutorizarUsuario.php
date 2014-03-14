@@ -23,10 +23,7 @@ class AutorizarUsuario
    * @ORM\Column(type="string", length=255)
    */
     protected $cod_Usu;
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    protected $status;
+
 
     /**
      * Get id

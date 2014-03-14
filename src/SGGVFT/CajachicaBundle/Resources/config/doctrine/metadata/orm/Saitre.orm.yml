@@ -1,0 +1,52 @@
+Saitre:
+    type: entity
+    table: SAITRE
+    indexes:
+        folderitemname_idx:
+            columns:
+                - folderid
+                - itemtype
+                - itemname
+    uniqueConstraints:
+        itemid_idx:
+            columns:
+                - itemid
+    id:
+        folderid:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+        itemname:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            id: true
+        itemtype:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+        modified:
+            type: datetime
+            nullable: false
+            id: true
+    fields:
+        itemid:
+            type: integer
+            nullable: false
+            unsigned: false
+        itemsize:
+            type: integer
+            nullable: true
+            unsigned: false
+        deleted:
+            type: datetime
+            nullable: true
+        template:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+    lifecycleCallbacks: {  }

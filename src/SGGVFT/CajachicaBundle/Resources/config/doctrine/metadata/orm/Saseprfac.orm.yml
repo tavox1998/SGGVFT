@@ -1,0 +1,72 @@
+Saseprfac:
+    type: entity
+    table: SASEPRFAC
+    id:
+        tipofac:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            id: true
+            column: TipoFac
+        numerod:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: NumeroD
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLinea
+        nrolineac:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLineaC
+        nroserial:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            id: true
+            column: NroSerial
+    fields:
+        status:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: Status
+        coditem:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: CodItem
+        codubic:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUbic
+        esconsig:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsConsig
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '00000'
+            column: CodSucu
+    lifecycleCallbacks: {  }

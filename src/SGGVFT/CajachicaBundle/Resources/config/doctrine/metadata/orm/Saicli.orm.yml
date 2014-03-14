@@ -1,0 +1,21 @@
+Saicli:
+    type: entity
+    table: SAICLI
+    id:
+        codclie:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodClie
+            generator:
+                strategy: IDENTITY
+    fields:
+        imagen:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Imagen
+    lifecycleCallbacks: {  }

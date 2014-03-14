@@ -1,0 +1,52 @@
+Saoper:
+    type: entity
+    table: SAOPER
+    indexes:
+        SAOPER_IX1:
+            columns:
+                - Descrip
+        SAOPER_IX2:
+            columns:
+                - Clase
+    id:
+        codoper:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodOper
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        clase:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Clase
+        tipoope:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoOpe
+        rango:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: Rango
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+    lifecycleCallbacks: {  }

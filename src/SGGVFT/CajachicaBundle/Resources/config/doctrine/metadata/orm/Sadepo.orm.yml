@@ -1,0 +1,112 @@
+Sadepo:
+    type: entity
+    table: SADEPO
+    indexes:
+        SADEPO_IX1:
+            columns:
+                - Descrip
+        SADEPO_IX2:
+            columns:
+                - Clase
+    id:
+        codubic:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodUbic
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        clase:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Clase
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+        represent:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Represent
+        direc1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc1
+        direc2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Direc2
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        telef:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Telef
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        printer:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Printer
+        esvirtual:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsVirtual
+        codalte:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodAlte
+    lifecycleCallbacks: {  }

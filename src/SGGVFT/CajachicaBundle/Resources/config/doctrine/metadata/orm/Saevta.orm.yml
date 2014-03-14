@@ -1,0 +1,82 @@
+Saevta:
+    type: entity
+    table: SAEVTA
+    id:
+        periodo:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            id: true
+            column: Periodo
+            generator:
+                strategy: IDENTITY
+    fields:
+        codsucu:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: CodSucu
+        mtoventas:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoVentas
+        descto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Descto
+        fletes:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Fletes
+        mtotax:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax
+        contado:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Contado
+        credito:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Credito
+        costo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo
+        nrofacts:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroFacts
+        nrodevol:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroDevol
+    lifecycleCallbacks: {  }

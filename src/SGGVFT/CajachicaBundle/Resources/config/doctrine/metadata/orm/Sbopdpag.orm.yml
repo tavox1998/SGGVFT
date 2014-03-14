@@ -1,0 +1,86 @@
+Sbopdpag:
+    type: entity
+    table: SBOPDPAG
+    id:
+        codprov:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProv
+        nroopago:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: NroOPago
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLinea
+    fields:
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        nroucxp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroUCxP
+        tipocxp:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: TipoCxP
+        fechae:
+            type: datetime
+            nullable: false
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: false
+            column: FechaV
+        document:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Document
+        numerod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: NumeroD
+        saldo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Saldo
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        mtoreten:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoReten
+    lifecycleCallbacks: {  }

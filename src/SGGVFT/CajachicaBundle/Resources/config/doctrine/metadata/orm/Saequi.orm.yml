@@ -1,0 +1,19 @@
+Saequi:
+    type: entity
+    table: SAEQUI
+    id:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProd
+        codalte:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodAlte
+    lifecycleCallbacks: {  }

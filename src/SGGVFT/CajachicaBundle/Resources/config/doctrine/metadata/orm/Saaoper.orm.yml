@@ -1,0 +1,33 @@
+Saaoper:
+    type: entity
+    table: SAAOPER
+    id:
+        codtbl:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: CodTbl
+        numgrp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NumGrp
+        nrooper:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroOper
+    fields:
+        pdtareq:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PDtaReq
+    lifecycleCallbacks: {  }

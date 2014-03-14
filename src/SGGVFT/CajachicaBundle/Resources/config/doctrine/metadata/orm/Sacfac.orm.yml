@@ -1,0 +1,46 @@
+Sacfac:
+    type: entity
+    table: SACFAC
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipotra:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            column: TipoTra
+        numerod:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroD
+        codesta:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodEsta
+        codusua:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUsua
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechat:
+            type: datetime
+            nullable: true
+            column: FechaT
+    lifecycleCallbacks: {  }

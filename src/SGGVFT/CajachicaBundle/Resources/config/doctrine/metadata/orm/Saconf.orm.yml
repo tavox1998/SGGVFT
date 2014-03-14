@@ -1,0 +1,359 @@
+Saconf:
+    type: entity
+    table: SACONF
+    id:
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            id: true
+            column: CodSucu
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            column: Descrip
+        direc1:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: Direc1
+        direc2:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: Direc2
+        email:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Email
+        telef:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Telef
+        rif:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: RIF
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+        spais:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SPais
+        sestado:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SEstado
+        sciudad:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SCiudad
+        smunicipio:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: SMunicipio
+        codtaxs:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: CodTaxs
+        costomes:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CostoMes
+        correlprd:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CorrelPrd
+        idappnot:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IdAppNot
+        mescurso:
+            type: string
+            nullable: true
+            length: 6
+            fixed: false
+            column: MesCurso
+        mestran:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MesTran
+        mesoc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MesOC
+        mesprf:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MesPrf
+        idversion:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IdVersion
+        idverxtra:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IdVerXtra
+        mesesptos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MesesPtos
+        valorptos:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ValorPtos
+        fechauc:
+            type: datetime
+            nullable: true
+            column: FechaUC
+        mtoextrag:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoExtraG
+        impfletev:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImpFleteV
+        impfletec:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ImpFleteC
+        reteniva:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: RetenIVA
+        autoreten:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: AutoReten
+        porctreten:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PorctReten
+        pedirnctrl:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PedirNCtrl
+        redond:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Redond
+        redtotal:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: RedTotal
+        oblioper:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ObliOper
+        paswlim:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PaswLim
+        adicional:
+            type: text
+            nullable: true
+            length: 400
+            fixed: false
+            column: Adicional
+        factor:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Factor
+        factorm:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: FactorM
+        usafactorm:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UsaFactorM
+        simbfac:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: SimbFac
+        esmoneda:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsMoneda
+        usanel:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UsaNEL
+        invconsig:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: InvConsig
+        prioridadic:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PrioridadIC
+        correlunc:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CorrelUNC
+        imagen:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Imagen
+        nroserial:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: NroSerial
+        keyserial:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: KeySerial
+        nroestable:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NroEstable
+        establreten:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: EstablReten
+        ptoemireten:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: PtoEmiReten
+        feccadreten:
+            type: datetime
+            nullable: true
+            column: FecCadReten
+        autsrireten:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: AutSRIReten
+    lifecycleCallbacks: {  }

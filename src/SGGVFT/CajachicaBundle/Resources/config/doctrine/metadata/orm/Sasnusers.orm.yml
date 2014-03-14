@@ -1,0 +1,61 @@
+Sasnusers:
+    type: entity
+    table: SASNUSERS
+    indexes:
+        SASNUSERS_IX1:
+            columns:
+                - UserId
+    id:
+        codusua:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodUsua
+            generator:
+                strategy: IDENTITY
+    fields:
+        userid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UserId
+        descrip:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            column: Descrip
+        clave:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: Clave
+        tiponot:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            column: TipoNot
+        email:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Email
+        movil:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Movil
+        uprofile:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: UProfile
+    lifecycleCallbacks: {  }

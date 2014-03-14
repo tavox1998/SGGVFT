@@ -1,0 +1,209 @@
+Saopei:
+    type: entity
+    table: SAOPEI
+    indexes:
+        SAOPEI_IX1:
+            columns:
+                - TipoOpI
+                - Autori
+        SAOPEI_IX2:
+            columns:
+                - TipoOpI
+                - Respon
+    id:
+        tipoopi:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            id: true
+            column: TipoOpI
+        numerod:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: NumeroD
+    fields:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: NroUnico
+        status:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: Status
+        codsucu:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: CodSucu
+        codesta:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodEsta
+        codusua:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUsua
+        codubic:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUbic
+        codubic2:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUbic2
+        signo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Signo
+        fechat:
+            type: datetime
+            nullable: true
+            column: FechaT
+        otipo:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OTipo
+        onumero:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: ONumero
+        autori:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Autori
+        respon:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Respon
+        usomat:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: UsoMat
+        ordenc:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: OrdenC
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        codoper:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodOper
+        usointerno:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UsoInterno
+        esconsig:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsConsig
+        notas1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas1
+        notas2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas2
+        notas3:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas3
+        notas4:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas4
+        notas5:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas5
+        notas6:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas6
+        notas7:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas7
+        notas8:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas8
+        notas9:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas9
+        notas10:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Notas10
+    lifecycleCallbacks: {  }

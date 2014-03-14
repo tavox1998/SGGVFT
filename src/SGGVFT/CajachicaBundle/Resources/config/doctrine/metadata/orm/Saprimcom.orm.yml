@@ -1,0 +1,209 @@
+Saprimcom:
+    type: entity
+    table: SAPRIMCOM
+    id:
+        codprov:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProv
+        tipocom:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            id: true
+            column: TipoCom
+        numerod:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: NumeroD
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLinea
+    fields:
+        docimpo:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: DocImpo
+        coditem:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: CodItem
+        factor:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Factor
+        moneda:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: Moneda
+        fechai:
+            type: datetime
+            nullable: true
+            column: FechaI
+        preciou:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioU
+        precio1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio1
+        precioi1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioI1
+        precio2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio2
+        precioi2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioI2
+        preciou2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioU2
+        precio3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Precio3
+        precioi3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioI3
+        preciou3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrecioU3
+        costo1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo1
+        costo2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo2
+        costo3:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo3
+        costo4:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo4
+        costo5:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo5
+        costo6:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo6
+        costo7:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo7
+        costo8:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo8
+        costo9:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo9
+        costo10:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Costo10
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '00000'
+            column: CodSucu
+        nrolineac:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroLineaC
+    lifecycleCallbacks: {  }

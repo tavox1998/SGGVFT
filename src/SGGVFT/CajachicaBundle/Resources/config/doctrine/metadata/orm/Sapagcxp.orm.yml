@@ -1,0 +1,132 @@
+Sapagcxp:
+    type: entity
+    table: SAPAGCXP
+    id:
+        nroppal:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroPpal
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+    fields:
+        nroregi:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroRegi
+        tipocxp:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: TipoCxP
+        montodoca:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MontoDocA
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        numerod:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroD
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechao:
+            type: datetime
+            nullable: true
+            column: FechaO
+        esreten:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsReten
+        basereten:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: BaseReten
+        codoper:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodOper
+        codrete:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodRete
+        baseimpo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: BaseImpo
+        texento:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TExento
+        mtotax:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTax
+        reteniva:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: RetenIVA
+        sustraendo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Sustraendo
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '00000'
+            column: CodSucu
+    lifecycleCallbacks: {  }

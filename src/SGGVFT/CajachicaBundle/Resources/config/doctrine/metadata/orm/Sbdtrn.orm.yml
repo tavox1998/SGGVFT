@@ -1,0 +1,199 @@
+Sbdtrn:
+    type: entity
+    table: SBDTRN
+    indexes:
+        SBDTRN_IX1:
+            columns:
+                - CodCta
+                - Fecha
+                - CodBanc
+        SBDTRN_IX2:
+            columns:
+                - NOpe
+                - Fecha
+    id:
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBanc
+        nope:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NOpe
+        nlinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NLinea
+    fields:
+        codcta:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodCta
+        estransf:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsTransf
+        escuenta:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsCuenta
+        codusua:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodUsua
+        codsucu:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+            column: CodSucu
+        codoper:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodOper
+        codesta:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodEsta
+        cdcd:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CDCD
+        encope:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EncOpe
+        fecha:
+            type: datetime
+            nullable: false
+            column: Fecha
+        descripcion:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Descripcion
+        origen:
+            type: string
+            nullable: true
+            length: 35
+            fixed: false
+            column: Origen
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        dh:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DH
+        nmo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NMo
+        basetr:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: BaseTr
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        mtodb:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoDb
+        mtocr:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoCr
+        consolidado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Consolidado
+        fconsolidado:
+            type: datetime
+            nullable: true
+            column: FConsolidado
+        sicentro:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SiCentro
+        sitercero:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: SiTercero
+        codcencto:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodCenCto
+        codtercero:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodTercero
+        tercero:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Tercero
+        flujoe:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 3
+            column: FlujoE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,31 @@
+Sbfdcper:
+    type: entity
+    table: SBFDCPER
+    indexes:
+        SBFDCPER_IX1:
+            columns:
+                - Periodo
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+            generator:
+                strategy: IDENTITY
+    fields:
+        periodo:
+            type: string
+            nullable: false
+            length: 7
+            fixed: false
+            column: Periodo
+        saldoa:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoA
+    lifecycleCallbacks: {  }

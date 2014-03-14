@@ -1,0 +1,84 @@
+Saexiscon:
+    type: entity
+    table: SAEXISCON
+    id:
+        codprod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodProd
+        codubic:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodUbic
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+    fields:
+        codalte:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            column: CodAlte
+        tipotra:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: TipoTra
+        numerod:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroD
+        numerok:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroK
+        cantidad:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Cantidad
+        esunid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsUnid
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroLinea
+    lifecycleCallbacks: {  }

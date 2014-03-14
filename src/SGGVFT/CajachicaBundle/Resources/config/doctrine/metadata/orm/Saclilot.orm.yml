@@ -1,0 +1,19 @@
+Saclilot:
+    type: entity
+    table: SACLILOT
+    id:
+        codfacl:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodFacL
+        codclie:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: CodClie
+    lifecycleCallbacks: {  }

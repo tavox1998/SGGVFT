@@ -1,0 +1,52 @@
+Sbdefpd:
+    type: entity
+    table: SBDEFPD
+    id:
+        ndefapp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NDefAPP
+        tipocdt:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: TipoCDT
+        nlinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NLinea
+        ncampo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NCampo
+    fields:
+        tipodat:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoDat
+        data:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            column: Data
+        formato:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Formato
+    lifecycleCallbacks: {  }

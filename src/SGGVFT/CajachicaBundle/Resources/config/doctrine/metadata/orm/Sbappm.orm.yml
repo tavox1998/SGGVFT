@@ -1,0 +1,42 @@
+Sbappm:
+    type: entity
+    table: SBAPPM
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBanc
+        nroctrl:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            id: true
+            column: NroCtrl
+    fields:
+        fechap:
+            type: datetime
+            nullable: false
+            column: FechaP
+        nropagos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroPagos
+        mtopagos:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MtoPagos
+    lifecycleCallbacks: {  }

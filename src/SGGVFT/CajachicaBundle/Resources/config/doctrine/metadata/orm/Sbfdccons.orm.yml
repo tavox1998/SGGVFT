@@ -1,0 +1,37 @@
+Sbfdccons:
+    type: entity
+    table: SBFDCCONS
+    indexes:
+        SBFDCCONS_IX1:
+            columns:
+                - NLinea
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+            generator:
+                strategy: IDENTITY
+    fields:
+        nlinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NLinea
+        descripcion:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            column: Descripcion
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+    lifecycleCallbacks: {  }

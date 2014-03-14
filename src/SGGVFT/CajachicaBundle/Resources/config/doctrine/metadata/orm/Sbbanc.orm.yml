@@ -1,0 +1,284 @@
+Sbbanc:
+    type: entity
+    table: SBBANC
+    indexes:
+        SBBANC_IX1:
+            columns:
+                - Descripcion
+    id:
+        codbanc:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBanc
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Descripcion
+        nocuenta:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NoCuenta
+        sucursal:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Sucursal
+        tdc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TDC
+        ctacontab:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: CtaContab
+        saldoact:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoAct
+        saldoc1:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoC1
+        fechac1:
+            type: datetime
+            nullable: true
+            column: FechaC1
+        saldoc2:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: SaldoC2
+        fechac2:
+            type: datetime
+            nullable: true
+            column: FechaC2
+        prxconc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PrxConc
+        invche:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: InvChe
+        idb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: IDB
+        moneda:
+            type: string
+            nullable: true
+            length: 3
+            fixed: false
+            column: Moneda
+        pdb:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PDB
+        ctadebito:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CtaDebito
+        prxnddb:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: PrxNDDB
+        ctaconc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CtaConc
+        rtransf:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: RTransf
+        nomsuc:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: NomSuc
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        direccion1:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Direccion1
+        direccion2:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Direccion2
+        gerente:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Gerente
+        telefonos:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: Telefonos
+        fax:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: Fax
+        email:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: Email
+        memo:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Memo
+        mesesh:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MesesH
+        vnoch:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: VNoCh
+        vnodp:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: VNoDp
+        vnonc:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: VNoNc
+        vnond:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: VNoNd
+        prxcheque:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: PrxCheque
+        ncomp0:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NComp0
+        ncomp1:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NComp1
+        ncomp2:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NComp2
+        ncomp3:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NComp3
+        ncomp4:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NComp4
+        ncomp5:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NComp5
+    lifecycleCallbacks: {  }

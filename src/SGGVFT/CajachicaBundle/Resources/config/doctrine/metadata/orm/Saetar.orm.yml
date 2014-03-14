@@ -1,0 +1,69 @@
+Saetar:
+    type: entity
+    table: SAETAR
+    id:
+        codtarj:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodTarj
+        periodo:
+            type: string
+            nullable: false
+            length: 6
+            fixed: false
+            id: true
+            column: Periodo
+    fields:
+        mtoventas:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoVentas
+        mtoretenimp:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoRetenImp
+        impuesto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Impuesto
+        mtototreten:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTotReten
+        mtotips:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoTips
+        mtoingreso:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoIngreso
+        mtocompra:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: MtoCompra
+    lifecycleCallbacks: {  }

@@ -1,0 +1,203 @@
+Sbbene:
+    type: entity
+    table: SBBENE
+    indexes:
+        SBBENE_IX1:
+            columns:
+                - Descripcion
+    id:
+        codbene:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CodBene
+            generator:
+                strategy: IDENTITY
+    fields:
+        descripcion:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            column: Descripcion
+        ioe:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: IOE
+        pais:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pais
+        estado:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Estado
+        ciudad:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Ciudad
+        municipio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Municipio
+        zipcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: ZipCode
+        ecg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: ECG
+        direccion1:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Direccion1
+        direccion2:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Direccion2
+        telefonos:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Telefonos
+        movil:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Movil
+        fax:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: Fax
+        email:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: Email
+        memo:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: Memo
+        codcta:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CodCta
+        concepto1:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Concepto1
+        concepto2:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Concepto2
+        concepto3:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Concepto3
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        coment1:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Coment1
+        coment2:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Coment2
+        coment3:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Coment3
+        fechai:
+            type: datetime
+            nullable: true
+            column: FechaI
+        ufecha:
+            type: datetime
+            nullable: true
+            column: UFecha
+        udcto:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: UDcto
+        ubanco:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: UBanco
+        ubenef:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UBenef
+        ucoment1:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UComent1
+        ucoment2:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: UComent2
+        umonto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: UMonto
+    lifecycleCallbacks: {  }

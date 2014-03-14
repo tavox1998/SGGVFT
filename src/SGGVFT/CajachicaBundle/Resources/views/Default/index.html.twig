@@ -1,5 +1,7 @@
 {% extends "CajachicaBundle::layout.html.twig" %}
-
+ {% block head_javascripts %}
+ <script type="text/javascript" src="{{ asset('bundles/cajachica/js/view/index.js')}}"></script>
+ {% endblock %}
 {% block pageid %}index{% endblock %}
 
 {% block body %}

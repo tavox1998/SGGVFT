@@ -1,0 +1,26 @@
+Satradedocs:
+    type: entity
+    table: SATRADEDOCS
+    id:
+        nrounico:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: NroUnico
+            generator:
+                strategy: IDENTITY
+    fields:
+        pending:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Pending
+        tradedoc:
+            type: text
+            nullable: true
+            length: 16
+            fixed: false
+            column: TradeDoc
+    lifecycleCallbacks: {  }

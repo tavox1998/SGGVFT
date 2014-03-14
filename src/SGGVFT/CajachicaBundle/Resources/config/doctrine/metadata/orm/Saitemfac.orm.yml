@@ -1,0 +1,337 @@
+Saitemfac:
+    type: entity
+    table: SAITEMFAC
+    id:
+        tipofac:
+            type: string
+            nullable: false
+            length: 1
+            fixed: false
+            id: true
+            column: TipoFac
+        numerod:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: NumeroD
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLinea
+        nrolineac:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLineaC
+    fields:
+        otipo:
+            type: string
+            nullable: true
+            length: 1
+            fixed: false
+            column: OTipo
+        onumero:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: ONumero
+        numeroe:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: NumeroE
+        status:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: Status
+        coditem:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: CodItem
+        codubic:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodUbic
+        codmeca:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodMeca
+        codvend:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: CodVend
+        descrip1:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip1
+        descrip2:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip2
+        descrip3:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip3
+        descrip4:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip4
+        descrip5:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip5
+        descrip6:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip6
+        descrip7:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip7
+        descrip8:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip8
+        descrip9:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip9
+        descrip10:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip10
+        refere:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Refere
+        signo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Signo
+        cantmayor:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantMayor
+        cantidad:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Cantidad
+        cantidado:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadO
+        tara:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Tara
+        existantu:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExistAntU
+        existant:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: ExistAnt
+        cantidadu:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadU
+        cantidadc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadC
+        cantidada:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: CantidadA
+        cantidadua:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CantidadUA
+        totalitem:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: TotalItem
+        costo:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Costo
+        precio:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Precio
+        descto:
+            type: decimal
+            nullable: true
+            precision: 28
+            scale: 5
+            default: '0'
+            column: Descto
+        nrounicol:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroUnicoL
+        nrolote:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NroLote
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechal:
+            type: datetime
+            nullable: true
+            column: FechaL
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        esserv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsServ
+        esunid:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsUnid
+        esfreep:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsFreeP
+        espesa:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsPesa
+        esexento:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsExento
+        usaserv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: UsaServ
+        deslote:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsLote
+        desseri:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsSeri
+        descomp:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DEsComp
+        codsucu:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: '00000'
+            column: CodSucu
+    lifecycleCallbacks: {  }

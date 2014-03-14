@@ -1,0 +1,125 @@
+Saitemplani:
+    type: entity
+    table: SAITEMPLANI
+    id:
+        numerod:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            id: true
+            column: NumeroD
+        nrolinea:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: NroLinea
+    fields:
+        nroregi:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: NroRegi
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        tipocxc:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+            column: TipoCxc
+        numeroc:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            column: NumeroC
+        document:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Document
+        monto:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Monto
+        saldo:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Saldo
+        canceli:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelI
+        cancela:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelA
+        cancele:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelE
+        cancelc:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelC
+        cancelt:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelT
+        cancelg:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: CancelG
+        comision:
+            type: decimal
+            nullable: false
+            precision: 28
+            scale: 4
+            default: '0'
+            column: Comision
+        detalchq:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: DetalChq
+        prxvisita:
+            type: datetime
+            nullable: true
+            column: PrxVisita
+    lifecycleCallbacks: {  }

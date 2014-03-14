@@ -1,0 +1,79 @@
+Saconv:
+    type: entity
+    table: SACONV
+    indexes:
+        SACONV_IX1:
+            columns:
+                - Descrip
+    id:
+        codconv:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            id: true
+            column: CodConv
+            generator:
+                strategy: IDENTITY
+    fields:
+        descrip:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Descrip
+        autori:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Autori
+        respon:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Respon
+        fechae:
+            type: datetime
+            nullable: true
+            column: FechaE
+        fechav:
+            type: datetime
+            nullable: true
+            column: FechaV
+        frecuencia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Frecuencia
+        fechauc:
+            type: datetime
+            nullable: true
+            column: FechaUC
+        esfijo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsFijo
+        tipocnv:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: TipoCnv
+        esbase:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: EsBase
+        activo:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Activo
+    lifecycleCallbacks: {  }
