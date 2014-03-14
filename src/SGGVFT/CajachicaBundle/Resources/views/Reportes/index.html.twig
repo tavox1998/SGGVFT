@@ -1,5 +1,12 @@
 {% extends "CajachicaBundle::layout_cpanel.html.twig" %}
 
 {% block body %}
-    Reportes
+    <br><br>Reportes 
+<ul>
+    {% for list in lists %}
+	<li>{{loop.index}}</li>
+	{% else %}
+	<li>Recurso no encontrado!</li>
+    {% endfor %}
+</ul>
 {% endblock %}

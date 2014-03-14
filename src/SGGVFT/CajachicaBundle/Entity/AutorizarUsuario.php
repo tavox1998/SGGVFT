@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table(name="autorizar_Usuarios")
  * @ORM\Entity
  */
-class Autorizar_usuario
+class AutorizarUsuario
 {
     /**
      * @ORM\Id()
@@ -42,7 +42,7 @@ class Autorizar_usuario
      * Set cod_Usu
      *
      * @param integer $codUsu
-     * @return Autorizar_usuario
+     * @return AutorizarUsuario
      */
     public function setCodUsu($codUsu)
     {
@@ -65,7 +65,7 @@ class Autorizar_usuario
      * Set status
      *
      * @param string $status
-     * @return Autorizar_usuario
+     * @return AutorizarUsuario
      */
     public function setStatus($status)
     {
