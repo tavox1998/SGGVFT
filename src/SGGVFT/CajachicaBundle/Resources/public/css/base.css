@@ -1,7 +1,7 @@
 
 /* estilos pagina index acesso*/
 
-.index body{
+body.index{
 	background-color: #a5cdfe;
 	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 }
