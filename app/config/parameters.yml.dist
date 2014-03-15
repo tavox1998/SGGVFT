@@ -1,6 +1,6 @@
 parameters:
     database_driver: pdo_sqlsrv
-    database_host: 127.0.0.1
+    database_host: 192.168.1.102
     database_port: 1433
     database_name: SGGVFT
     database_user: SGGVFT
@@ -13,7 +13,7 @@ parameters:
     secret: ThisTokenIsNotSoSecretChangeIt
 
     database_driver2: pdo_sqlsrv
-    database_host2: 127.0.0.1
+    database_host2: 192.168.1.102
     database_port2: 1433
     database_name2: EnterpriseAdminDb
     database_user2: SGGVFT
