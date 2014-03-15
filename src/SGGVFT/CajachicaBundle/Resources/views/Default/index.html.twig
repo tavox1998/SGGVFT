@@ -5,45 +5,31 @@
 {% block pageid %}index{% endblock %}
 
 {% block body %}
-
-		<form  action="../sistema_caja_chica/modelo/autenticar.php" enctype="multipart/form-data"  method="post" name="ingresar">
-		<div id="inicio_sesion">
-			Inicio de Sesión
-		</div>
-		<div id="usu_contra">
-			<br>
-		    <input name="usuario" id="usuario"  type="text" placeholder="Introduzca un Usuario" autofocus class="form-control" />
-			<br>
-		    <input name="contrasena" id="contrasena" type="password"  placeholder="Introduzca una Contraseña"   class="form-control" onkeypress="return boton_entrar(event)"/>
-		</div>
-		<div id="footer_usu">
-			<div id="opciones">
-				<button  onclick="limpiar_opciones();" class="estilo_boton" type="button">
-				LIMPIAR
-				</button>
-				<button onclick="entrar();" class="estilo_boton" type="button">
-				ENTRAR
-				</button>
+	<div class="row">
+		<div class="col-sm-6 col-md-6 col-lg-6">
+			<div class="jumbotron">
+			  	<h2>ESPACIO PARA PUBLICIDAD</h2>
+			  	<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or 	information.</p>
+			  	<p><a class="btn btn-primary btn-lg">Learn more</a></p>
 			</div>
 		</div>
-		<div id="publicidad">
-			<br>
-			<br>
-			<br>
-			<br>
-			ESPACIO PARA PUBLICIDAD
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			ESPACIO PARA PUBLICIDAD
-		</div>
-	</form>
+		<div class="col-sm-6 col-md-6 col-lg-6">
+			<form action="" method="POST" role="form">
+				<legend>Inicio de Sesión</legend>
+				<div class="form-group">
+					<label for="">Nombre de Usuario:</label>
+					<input type="text" class="form-control" id="" placeholder="Introduzca un Usuario">
+				</div>
 
+				<div class="form-group">
+					<label for="">Contraseña:</label>
+					<input type="text" class="form-control" id="" placeholder="Introduzca un contraseña">
+				</div>
+			
+				<button type="submit" class="btn btn-primary">ENTRAR</button>
+				<button type="submit" class="btn btn-primary">LIMPIAR</button>
+				<hr>
+			</form>
+		</div>
+	</div>
 {% endblock %}

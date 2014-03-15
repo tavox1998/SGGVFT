@@ -16,13 +16,17 @@
 
     </head>
     <body class="{% block pageid '' %}">
-        <div id="cuerpo">
-            {% block header %} {% endblock %}
+
+        {% block header %} {% endblock %}
+
+        <div class="container">
 
             {% block body %}{% endblock %}
 
-            {% block footer %}{% endblock %}
         </div>
+
+        {% block footer %}{% endblock %}
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>
