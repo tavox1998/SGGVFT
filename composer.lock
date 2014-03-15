@@ -3,11 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-<<<<<<< HEAD
-    "hash": "3fb7139a885edf652e9c354fde310fc4",
-=======
-    "hash": "94a81424ef6482818016c26d23bec5c6",
->>>>>>> b13fc084170b15a05f6a61fb9337cece384488aa
+    "hash": "ff6bd88b359d52c86eb5da340725bc6a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -967,17 +963,17 @@
         },
         {
             "name": "jms/serializer-bundle",
-            "version": "0.13.0",
+            "version": "dev-master",
             "target-dir": "JMS/SerializerBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSSerializerBundle.git",
-                "reference": "bb15db3e661168f4310fad48b86915ff1ca33795"
+                "reference": "ca66cd3ace6bea5367838c6dfb00a6a0bacb8a79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSSerializerBundle/zipball/bb15db3e661168f4310fad48b86915ff1ca33795",
-                "reference": "bb15db3e661168f4310fad48b86915ff1ca33795",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSerializerBundle/zipball/ca66cd3ace6bea5367838c6dfb00a6a0bacb8a79",
+                "reference": "ca66cd3ace6bea5367838c6dfb00a6a0bacb8a79",
                 "shasum": ""
             },
             "require": {
@@ -1033,7 +1029,7 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2013-12-05 14:36:11"
+            "time": "2014-02-09 12:04:09"
         },
         {
             "name": "knplabs/knp-components",
@@ -2184,9 +2180,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "jms/serializer-bundle": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },
