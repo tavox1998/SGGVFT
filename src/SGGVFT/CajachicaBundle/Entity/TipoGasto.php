@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table(name="tipo_gasto")
  * @ORM\Entity
  */
-class Tipo_gasto
+class TipoGasto
 {
     /**
      * @ORM\Id

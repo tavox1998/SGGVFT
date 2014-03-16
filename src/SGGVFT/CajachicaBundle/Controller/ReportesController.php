@@ -10,7 +10,7 @@ class ReportesController extends Controller
 	public function indexAction()
     {
 
-    	$em = $this->getDoctrine()->getManager('customer');
+    	/*$em = $this->getDoctrine()->getManager('customer');
     	$db_reports = $em->getRepository("CajachicaBundle:Ssusrs")->findAll();
 
         $paginator  = $this->get('knp_paginator');
@@ -18,7 +18,8 @@ class ReportesController extends Controller
             $db_reports,
             $this->get('request')->query->get('page', 1),
             5
-        );
+        );*/
+        $pagination = array();
 
         return $this->render(
         	'CajachicaBundle:Reportes:index.html.twig', array(

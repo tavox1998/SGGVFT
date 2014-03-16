@@ -8,7 +8,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * SGGVFT\CajachicaBundle\Entity
  *
- * @ORM\Table(name="autorizar_Usuarios")
+ * @ORM\Table(name="autorizar_usuarios")
  * @ORM\Entity
  */
 class AutorizarUsuario

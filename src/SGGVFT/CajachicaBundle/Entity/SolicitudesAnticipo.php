@@ -8,10 +8,10 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * SGGVFT\CajachicaBundle\Entity
  *
- * @ORM\Table(name="solicitud_Anticipo")
+ * @ORM\Table(name="solicitud_anticipo")
  * @ORM\Entity
  */
-class Solicitudes_Anticipo
+class SolicitudesAnticipo
 {
     /**
      * @ORM\Id

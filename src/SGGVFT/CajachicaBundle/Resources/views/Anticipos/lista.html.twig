@@ -1,8 +1,11 @@
 {% extends "CajachicaBundle::layout_cpanel.html.twig" %}
 
+{% block pageid %}bg-white{% endblock %}
+
 {% block body %}
-	<br>
-	<br>
-	<br>
-    lista
+	<ol class="breadcrumb">
+		<li><a href="{{ path( 'cajachica_cpanel' ) }}">Menu</a></li>
+		<li><a href="{{ path( 'cpanel_anticipos' ) }}">Solicitud de Anticipos</a></li>
+		<li class="active">Lista de Anticipos</li>
+	</ol>
 {% endblock %}

@@ -8,10 +8,10 @@
 	/**
  	 * SGGVFT\CajachicaBundle\Entity
  	 *
-	 * @ORM\Table(name="componente_Solicitud")
+	 * @ORM\Table(name="componente_solicitud")
 	 * @ORM\Entity
      */
-	class Componente_solicitud
+	class ComponenteSolicitud
 	{
 	    /**
          * @ORM\Id

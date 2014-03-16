@@ -1,120 +1,191 @@
 {% extends "CajachicaBundle::layout_cpanel.html.twig" %}
-{% block pageid %}cpanel anticipo{% endblock %}
-{% block head_javascripts %}
-    <script type="text/javascript" src="{{ asset('bundles/cajachica/js/view/nueva-solicitud.js')}}"></script>
-{% endblock %}
+{% block pageid %}bg-white{% endblock %}
+
 {% block body %}
+	<ol class="breadcrumb">
+		<li><a href="{{ path( 'cajachica_cpanel' ) }}">Menu</a></li>
+		<li><a href="{{ path( 'cpanel_anticipos' ) }}">Solicitud de Anticipos</a></li>
+		<li class="active">Nueva Solicitud</li>
+	</ol>
 	<div class="row">
 		<div class="col-sm-3 col-md-3 col-lg-3">
-			<label for="fecha_solicitud">Fecha de Solicutud: <span class="required">*</span></label>
-		    <input type="date" id="name" name="fecha_solicitud" required="required" autofocus="autofocus" class="form-control" />
-			<br><br>
-			<label for="destino">Destino: <span class="required">*</span></label>
-			<input  id="pais" name="destino" value="" placeholder="Pais"   type="text" size="15" disabled required="required" class="form-control"/>
-			<a href="#" onclick="elegir_destino();"><img src="{{ asset('bundles/cajachica/images/destino.png') }}" width="30" height="30" /></a>
-			<br>
-			<input  id="estado" name="destino" value="" placeholder="Estado"  type="text" size="15" disabled required="required" class="form-control"/>
-			<br>
-			<input  id="ciudad" name="destino" value="" placeholder="Ciudad"  type="text" size="15" disabled required="required" class="form-control"/>
-			<br>
-			<input  id="lugar" name="destino" value="" placeholder="Lugar"  type="text" size="15"  required="required" class="form-control"/>
-			<br>
-			<input  id="punto_referencia" name="destino" value="" placeholder="Punto de Referencia"  type="text" size="15"  class="form-control" />
-			<br>
-			<label for="descripcion">Descripción: <span class="required">*</span></label>
-			<textarea id="descripcion" name="descripcion" required="required" rows="4" cols="50" placeholder="Descripción Solicitud" class="form-control"></textarea>
+			<div class="form-group">
+				<label for="fecha_solicitud">Fecha de Solicutud: <span class="required">*</span></label>
+			    <input type="date" id="name" name="fecha_solicitud" required="required" autofocus="autofocus" class="form-control input-sm" />	
+			</div>
+			<div class="form-group">
+				<label for="destino">Destino: <span class="required">*</span></label>
+				<input  id="pais" name="destino" value="" placeholder="Pais"   type="text" disabled required="required" class="form-control input-sm"/>
+				<a href="#" onclick="elegir_destino();"><img src="{{ asset('bundles/cajachica/images/destino.png') }}" width="30" height="30" /></a>
+			</div>
+			<div class="form-group">
+				<input  id="estado" name="destino" value="" placeholder="Estado"  type="text" disabled required="required" class="form-control input-sm"/>
+			</div>
+			<div class="form-group">
+				<input  id="ciudad" name="destino" value="" placeholder="Ciudad"  type="text" disabled required="required" class="form-control input-sm"/>
+			</div>
+			<div class="form-group">
+				<input  id="lugar" name="destino" value="" placeholder="Lugar"  type="text"  required="required" class="form-control input-sm"/>
+			</div>
+			<div class="form-group">
+				<input  id="punto_referencia" name="destino" value="" placeholder="Punto de Referencia"  type="text"  class="form-control input-sm" />
+			</div>
+			<div class="form-group">
+				<label for="descripcion">Descripción: <span class="required">*</span></label>
+				<textarea id="descripcion" name="descripcion" required="required" rows="4" cols="50" placeholder="Descripción Solicitud" class="form-control input-sm"></textarea>
+			</div>
 		</div>
 		<div class="col-sm-9 col-md-9 col-lg-9">
-			<div class="page-header">
-			  	<h3>Nueva Solicitud<small></small></h3>
-			</div>
-			<form id="validar_datos_gastos" name="validar_datos_gastos" class="form-horizontal">
-				<div class="row" >
-					<div class="col-md-5">
-						<div class="form-group">
-							<label for="" class="control-label col-md-4"> Codigo: </label>
-							<div class="col-md-8">
-								<input  id="Cod_gasto" value=""  type="text" size="5" disabled required class="cantidad form-control input-sm"/>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5">
-						<div class="form-group">
-							<label for="" class="control-label col-md-6"> Tipo de Gasto: </label>
-							<div class="col-md-6">
-								<input  id="Descrip_gasto" value=""  type="text" size="15"disabled required class="form-control input-sm"/>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<a href="#" onclick="elegir_gasto(); return false;"><img src="{{ asset('bundles/cajachica/images/gastos.png') }}" width="30" height="30" /></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="form-group">
-							<label for="" class="control-label col-md-6"> Cantidad: </label>
-							<div class="col-md-6">
-								<input id="cantidad" value=""  type="text" size="50" onKeyUp="totalizar();" required class="cantidad2 form-control input-sm"/>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-							<label for="" class="control-label col-md-7"> Monto Unit: </label>
-							<div class="col-md-5">
-								<input id="Precio_unit" value=""  type="text" size="50" disabled="true" required class="cantidad form-control input-sm"/>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="form-group">
-							<label for="" class="control-label col-md-6"> Total: </label>
-							<div class="col-md-6">
-								<input id="Total" value=""  type="text" size="50" disabled="true" required class="cantidad form-control input-sm"/>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<button type="button" class="estilo_boton" id="agregar"  onClick="agregar_fila_gastos();">Agregar</button>
-					</div>
-				</div>
-			</form>
 			<div class="row">
 				<div class="col-md-12">
 					<div id="tablas_gastos">
-						<table class="ExcelTable2007" border="0" cellspacing="0" cellpadding="0"  >
-							<thead height="100">
-								<tr>
-									<th width="25" class="heading" scope="col"></th>
-									<th width="50" scope="col">Cod.</th>
-									<th width="230" scope="col">Descipcion Gasto</th>
-									<th width="40"  scope="col">Cant.</th>
-									<th width="100"  scope="col">Unit.</th>
-									<th width="150"  scope="col" >Total</th>
-									<th width="40" scope="col"> Descartar</th>
-								</tr>
-							</thead>
-							<tbody id= "tbody_gastos">
-							</tbody>
-						</table>
+						<div class="panel panel-default">
+
+							{# <div class="panel-heading">Panel heading</div> #}
+							<div class="panel-body">
+								<form id="validar_datos_gastos" name="validar_datos_gastos" class="form-horizontal">
+									<div class="row" >
+										<div class="col-md-5">
+											<div class="form-group">
+												<label for="" class="control-label col-md-4"> Codigo: </label>
+												<div class="col-md-8">
+													<input  id="Cod_gasto" value=""  type="text" size="5" disabled required class="cantidad form-control input-sm"/>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="form-group">
+												<label for="" class="control-label col-md-6"> Tipo de Gasto: </label>
+												<div class="col-md-6">
+													<input  id="Descrip_gasto" value=""  type="text" size="15"disabled required class="form-control input-sm"/>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<a href="#" onclick="elegir_gasto(); return false;"><img src="{{ asset('bundles/cajachica/images/gastos.png') }}" width="30" height="30" /></a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group">
+												<label for="" class="control-label col-md-6"> Cantidad: </label>
+												<div class="col-md-6">
+													<input id="cantidad" value=""  type="text" size="50" onKeyUp="totalizar();" required class="cantidad2 form-control input-sm"/>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<label for="" class="control-label col-md-7"> Monto Unit: </label>
+												<div class="col-md-5">
+													<input id="Precio_unit" value=""  type="text" size="50" disabled="true" required class="cantidad form-control input-sm"/>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group">
+												<label for="" class="control-label col-md-6"> Total: </label>
+												<div class="col-md-6">
+													<input id="Total" value=""  type="text" size="50" disabled="true" required class="cantidad form-control input-sm"/>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<button type="button" class="btn btn-sm btn-primary" id="agregar"  onClick="agregar_fila_gastos();">Agregar</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<table class="table table-striped table-hover ">
+							  <thead>
+							    <tr>
+									<th width="5%">#</th>
+									<th width="10%">Cod.</th>
+									<th width="auto">Descripción Gasto</th>
+									<th width="10%">Cant.</th>
+									<th width="10%">Unit.</th>
+									<th width="15%">Total</th>
+									<th width="15%">Descartar</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td>1</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							    </tr>
+							    <tr>
+							      <td>2</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							    </tr>
+							    <tr class="info">
+							      <td>3</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							    </tr>
+							    <tr class="success">
+							      <td>4</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							    </tr>
+							    <tr class="danger">
+							      <td>5</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							    </tr>
+							    <tr class="warning">
+							      <td>6</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							    </tr>
+							    <tr class="active">
+							      <td>7</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							      <td>Column content</td>
+							    </tr>
+							  </tbody>
+							</table> 
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="opciones">
-				<button type="button" class="estilo_boton" id="atras"  onClick="agregar_fila_gastos();">Atras</button>
-				<button type="button" class="estilo_boton" id="cancelar"  onClick="agregar_fila_gastos();">Cancelar</button>
-				<button type="button" class="estilo_boton" id="procesar"  onClick="guardar_solicitud();">Procesar</button>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12 text-right">
+					<button type="button" class="btn btn-primary">Atras</button>
+					<button type="button" class="btn btn-primary">Cancelar</button>
+					<button type="button" class="btn btn-primary">Procesar</button>
+				</div>
 			</div>
 		</div>
 	</div>
-	{# <div id="prinicipal">
-		<div id="fecha_solicitud">
-		</div>
-		<div id="tabla_gastos">
-		</div>
-
-		<div id="contenido_modal" style="display:none;" width="830" height="590">
-		</div>
-	</div> #}
+   <script type="text/javascript" src="{{ asset('bundles/cajachica/js/view/nueva-solicitud.js')}}"></script>
 {% endblock %}
