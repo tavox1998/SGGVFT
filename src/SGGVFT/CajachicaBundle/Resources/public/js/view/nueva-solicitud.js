@@ -1,18 +1,34 @@
 (function($) {
     $(document).ready(function() {
-       /* $('#my-table').dynatable({
+        $('#my-table').dynatable({
             table: {
                 defaultColumnIdStyle: 'trimDash'
-            },
+            }
+            /*,
              dataset: {
                 ajax: true,
                 ajaxUrl: '/dynatable-ajax.json',
                 ajaxOnLoad: true,
                 records: []
-            }
-        });*/
+            }*/
+        });
+
+
+        $('#sel_gastos').on('click', function(event) {
+            event.preventDefault();
+            $('#myModal').modal({
+                keyboard: false
+            })
+
+            $('#myModal').on('hidden.bs.modal', function (e) {
+                alert('probando');
+            })
+
+        });
+
     });
-    aj
+
+
 })(jQuery);
 
 /*código gustavo*/
