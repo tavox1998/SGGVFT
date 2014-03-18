@@ -9,7 +9,7 @@
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
 			    </button>
-			    <a class="navbar-brand" href="#">MENU</a>
+			    <a class="navbar-brand" href="{{ path( 'cajachica_cpanel' ) }}">MENU</a>
 			</div>
 			<div class="navbar-collapse collapse navbar-inverse-collapse">
 			    <ul class="nav navbar-nav">
@@ -17,7 +17,7 @@
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
 			      <li><a href="#">AYUDA</a></li>
-			      <li><a href="#">SALIR</a></li>
+			      <li><a href="{{ path('cajachica_login') }}">SALIR</a></li>
 			    </ul>
 			</div>
     	</div>
@@ -31,6 +31,6 @@
 {% block footer %}
 	<hr>
 	<div class="container">
-		&copy; Derechos Reservados.
+		<p> &copy; Derechos Reservados. </p>
 	</div>
 {% endblock %}

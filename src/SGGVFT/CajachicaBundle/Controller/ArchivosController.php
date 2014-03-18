@@ -8,6 +8,6 @@ class ArchivosController extends Controller
 {
 	public function indexAction()
     {
-        return $this->render('CajachicaBundle:Reportes:index.html.twig');
+        return $this->render('CajachicaBundle:Archivos:index.html.twig');
     }
 }

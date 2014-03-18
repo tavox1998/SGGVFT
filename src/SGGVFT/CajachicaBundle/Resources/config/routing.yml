@@ -1,4 +1,4 @@
-cajachica_homepage:
+cajachica_login:
     pattern:  /
     defaults: { _controller: CajachicaBundle:Default:index }
 

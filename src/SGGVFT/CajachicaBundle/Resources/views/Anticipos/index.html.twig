@@ -1,11 +1,10 @@
 {% extends "CajachicaBundle::layout_cpanel.html.twig" %}
 
 {% block body %}
-<br>
-<br>
-<br>
-<br>
-
+<ol class="breadcrumb">
+	<li><a href="{{ path( 'cajachica_cpanel' ) }}">Menu</a></li>
+	<li class="active">Solicitud de Anticipos</li>
+</ol>
 <div class="list-group">
 	<a href="{{ url('anticipos_nuevo') }}" class="list-group-item "> Nueva Solicitud </a>
 	<a href="{{ url('anticipos_lista') }}" class="list-group-item">Listar Solicitud</a>

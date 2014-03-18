@@ -16,6 +16,11 @@ class AnticiposController extends Controller
         return $this->render('CajachicaBundle:Anticipos:nuevo.html.twig');
     }
 
+    public function listMunicipioAction()
+    {
+
+    }
+
     public function listaAction()
     {
         return $this->render('CajachicaBundle:Anticipos:lista.html.twig');
