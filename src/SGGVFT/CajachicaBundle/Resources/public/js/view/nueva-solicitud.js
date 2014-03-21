@@ -17,11 +17,13 @@
         $('#sel_gastos').on('click', function(event) {
             event.preventDefault();
             $('#myModal').modal({
-                keyboard: false
+                keyboard: false,
+                backdrop: 'static'
             })
 
-            $('#myModal').on('hidden.bs.modal', function (e) {
-                alert('probando');
+            $('#myModal').on('shown.bs.modal', function (e) {
+                $( "#myModal" ).unbind('shown.bs.modal');
+                /*$('#modal-content')*/
             })
 
         });
